@@ -41,13 +41,17 @@
             <ui:VisualElement style="align-items: center;">
                 <ui:Button text="上传虚拟形象" display-tooltip-when-elided="true" name="uploadButton" class="red-button" style="margin-top: 32px; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; height: 27px; width: 228px; border-top-left-radius: 6px; border-bottom-left-radius: 6px; border-top-right-radius: 6px; border-bottom-right-radius: 6px; align-items: auto;" />
             </ui:VisualElement>
-            <ui:VisualElement style="flex-direction: row; justify-content: center; align-items: center; margin-left: -12px; margin-top: 15px; -unity-text-align: upper-left;">
-                <ui:VisualElement style="background-image: url(&apos;project://database/Packages/com.douyin.common/Config/UI/Icons/info_icon.png?fileID=21300000&amp;guid=a237db8bee26ab04c9f4295f5407b7e9&amp;type=3#info_icon&apos;); width: 13px; height: 12px; flex-shrink: 0; margin-top: 0; margin-right: 4px;" />
+            <ui:VisualElement style="flex-direction: row; justify-content: flex-start; align-items: center; margin-left: 0; margin-top: 15px; -unity-text-align: upper-left; flex-wrap: wrap;">
+                <ui:VisualElement style="background-image: url(&apos;project://database/Packages/com.douyin.common/Config/UI/Icons/info_icon.png?fileID=21300000&amp;guid=a237db8bee26ab04c9f4295f5407b7e9&amp;type=3#info_icon&apos;); width: 13px; height: 12px; flex-shrink: 0; margin-top: 0; margin-right: 4px; margin-left: -12px;" />
                 <ui:Label text="上传或更新的虚拟形象将进行云端处理，云端处理完成后可进行测试和发布" display-tooltip-when-elided="true" name="WarningStaticLabel" class="size-11" style="align-items: auto; -unity-text-align: upper-left; overflow: visible; border-left-width: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
-            </ui:VisualElement>
-            <ui:VisualElement style="flex-direction: row; justify-content: center; margin-top: 3px;">
                 <ui:Button text="《如何测试虚拟形象》" display-tooltip-when-elided="true" name="TestLinkButton" class="hyperlink-button  size-11" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
                 <ui:Button text="《如何发布虚拟形象》" display-tooltip-when-elided="true" name="PublishLinkButton" class="hyperlink-button size-11" style="padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="ProtocalRoot" style="flex-direction: row; justify-content: flex-start; margin-top: 5px; flex-wrap: wrap; align-items: center;">
+                <ui:Toggle name="ProtocalCheckbox" value="true" style="margin-left: -12px;" />
+                <ui:Label text="同意创建/绑定抖音开放平台账号，已阅读并同意" display-tooltip-when-elided="true" name="ProtocolInfo" style="flex-wrap: wrap;" />
+                <ui:Button text="《抖音开放平台服务协议》" display-tooltip-when-elided="true" name="DYKPProtocol" class="hyperlink-button size-11" style="padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
+                <ui:Button text="《账号绑定须知》" display-tooltip-when-elided="true" name="IDBindInfo" class="hyperlink-button size-11" style="padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
