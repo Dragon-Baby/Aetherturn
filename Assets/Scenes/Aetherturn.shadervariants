@@ -24,9 +24,13 @@ ShaderVariantCollection:
         passType: 8
       - keywords: 
         passType: 11
+      - keywords: _EMISSION
+        passType: 11
       - keywords: _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
         passType: 11
       - keywords: 
+        passType: 13
+      - keywords: _EMISSION
         passType: 13
       - keywords: _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
         passType: 13
