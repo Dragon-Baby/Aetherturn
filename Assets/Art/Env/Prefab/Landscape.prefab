@@ -322,7 +322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 94.78
+      value: 95.66
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -330,7 +330,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.99642223
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -338,7 +338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.08451502
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
       propertyPath: m_LocalRotation.z
@@ -350,7 +350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -9.696
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -375,6 +375,205 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
   m_PrefabInstance: {fileID: 2131675024203731185}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &3389919790101554990 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -5575929999083587617, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
+  m_PrefabInstance: {fileID: 2131675024203731185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3658137053551755981 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5813747552983854532, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
+  m_PrefabInstance: {fileID: 2131675024203731185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5490942527994668845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3658137053551755981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 540439951, guid: 3ead8c7f8efe8473b8d110669e8128d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NetGUID:
+    n1: 2591479458986594850
+    n2: 7760130164650984269
+  RunContext: 0
+--- !u!114 &9126060905419983339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3658137053551755981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -413692930, guid: c1a957cff7a534cbab677bbff81abab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptAsset: {fileID: -4320198879241519195, guid: 9ea397be019cb5d4a8bc3b9adec9bb22, type: 3}
+  ParaLuaBindingData:
+  - rid: 5760247010280603682
+  - rid: 5760247010280603683
+  - rid: 5760247010280603684
+  - rid: 5760247010280603685
+  - rid: 5760247010280603686
+  - rid: 5760247010280603687
+  - rid: 5760247010280603688
+  - rid: 5760247010280603689
+  - rid: 5760247010280603690
+  IsServerScript: 0
+  IsManualedVar: 1
+  eNetState: 0
+  autoUpdate: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 5760247010280603682
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: OrbitCenter
+        Data: {fileID: 3389919790101554990}
+        varType: UnityEngine.Transform
+    - rid: 5760247010280603683
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: OrbitCenterPosition
+        Data: {x: 0, y: 0, z: 0}
+    - rid: 5760247010280603684
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: OrbitAxis
+        Data: {x: 0, y: 1, z: 0}
+    - rid: 5760247010280603685
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: OrbitLoops
+        Data: 50
+    - rid: 5760247010280603686
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: AccelDuration
+        Data: 10
+    - rid: 5760247010280603687
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: CruiseDuration
+        Data: 10
+    - rid: 5760247010280603688
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: DecelDuration
+        Data: 10
+    - rid: 5760247010280603689
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: AutoPlay
+        Data: 1
+    - rid: 5760247010280603690
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: KeepOriginalRotation
+        Data: 0
+--- !u!1 &8909892836477945961 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1859010864109283176, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
+  m_PrefabInstance: {fileID: 2131675024203731185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4773470767923483949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8909892836477945961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 540439951, guid: 3ead8c7f8efe8473b8d110669e8128d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NetGUID:
+    n1: 2819536830337025939
+    n2: 8955185569150352846
+  RunContext: 0
+--- !u!114 &3694328279669658413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8909892836477945961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -413692930, guid: c1a957cff7a534cbab677bbff81abab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptAsset: {fileID: -4320198879241519195, guid: 9ea397be019cb5d4a8bc3b9adec9bb22, type: 3}
+  ParaLuaBindingData:
+  - rid: 5760247010280603673
+  - rid: 5760247010280603674
+  - rid: 5760247010280603675
+  - rid: 5760247010280603676
+  - rid: 5760247010280603677
+  - rid: 5760247010280603678
+  - rid: 5760247010280603679
+  - rid: 5760247010280603680
+  - rid: 5760247010280603681
+  IsServerScript: 0
+  IsManualedVar: 1
+  eNetState: 0
+  autoUpdate: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 5760247010280603673
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: OrbitCenter
+        Data: {fileID: 3389919790101554990}
+        varType: UnityEngine.Transform
+    - rid: 5760247010280603674
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: OrbitCenterPosition
+        Data: {x: 0, y: 0, z: 0}
+    - rid: 5760247010280603675
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: OrbitAxis
+        Data: {x: 0, y: 1, z: 0}
+    - rid: 5760247010280603676
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: OrbitLoops
+        Data: 50
+    - rid: 5760247010280603677
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: AccelDuration
+        Data: 10
+    - rid: 5760247010280603678
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: CruiseDuration
+        Data: 10
+    - rid: 5760247010280603679
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: DecelDuration
+        Data: 10
+    - rid: 5760247010280603680
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: AutoPlay
+        Data: 1
+    - rid: 5760247010280603681
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: KeepOriginalRotation
+        Data: 0
 --- !u!1001 &2391278404956527205
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -460,17 +659,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2131675023168108543}
     m_Modifications:
+    - target: {fileID: 885160899639619119, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: NetGUID.n1
+      value: 762866283876171495
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772836304272722782, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: NetGUID.n1
+      value: 15253532924223721022
+      objectReference: {fileID: 0}
     - target: {fileID: 5839961311583432460, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5839961311583432460, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.62
+      value: -13.88
       objectReference: {fileID: 0}
     - target: {fileID: 5839961311583432460, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 94.08
+      value: 97.81
       objectReference: {fileID: 0}
     - target: {fileID: 5839961311583432460, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
       propertyPath: m_LocalPosition.z
@@ -508,6 +715,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wing02
       objectReference: {fileID: 0}
+    - target: {fileID: 8241933111644116886, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: NetGUID.n1
+      value: 12886960523033198208
+      objectReference: {fileID: 0}
+    - target: {fileID: 8974268125898306004, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: NetGUID.n1
+      value: 187231162449106416
+      objectReference: {fileID: 0}
+    - target: {fileID: 9106824844448004331, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: managedReferences[5760247010280603664].Data
+      value: 
+      objectReference: {fileID: 3389919790101554990}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
 --- !u!4 &8399933869365508753 stripped
@@ -522,17 +741,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2131675023168108543}
     m_Modifications:
+    - target: {fileID: 885160899639619119, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: NetGUID.n1
+      value: 14673726101696176088
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772836304272722782, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: NetGUID.n1
+      value: 3374197545176597667
+      objectReference: {fileID: 0}
     - target: {fileID: 5839961311583432460, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5839961311583432460, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.62
+      value: 13.88
       objectReference: {fileID: 0}
     - target: {fileID: 5839961311583432460, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 94.08
+      value: 97.81
       objectReference: {fileID: 0}
     - target: {fileID: 5839961311583432460, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
       propertyPath: m_LocalPosition.z
@@ -570,6 +797,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wing01
       objectReference: {fileID: 0}
+    - target: {fileID: 8241933111644116886, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: NetGUID.n1
+      value: 5658517121828472650
+      objectReference: {fileID: 0}
+    - target: {fileID: 8974268125898306004, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: NetGUID.n1
+      value: 3429884353622028922
+      objectReference: {fileID: 0}
+    - target: {fileID: 9106824844448004331, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: managedReferences[5760247010280603664].Data
+      value: 
+      objectReference: {fileID: 3389919790101554990}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
 --- !u!4 &1882366513772312743 stripped

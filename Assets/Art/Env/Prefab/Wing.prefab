@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5645053534062425775}
+  - component: {fileID: 5772836304272722782}
+  - component: {fileID: 6685225876220010549}
   m_Layer: 0
   m_Name: Spine02
   m_TagString: Untagged
@@ -23,7 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479683872344138177}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -0.030975513, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -31,7 +33,92 @@ Transform:
   - {fileID: 8589210545977489736}
   m_Father: {fileID: 2575049163518856409}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &5772836304272722782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479683872344138177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 540439951, guid: 3ead8c7f8efe8473b8d110669e8128d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NetGUID:
+    n1: 5432544481836947391
+    n2: 7905733107647456178
+  RunContext: 0
+--- !u!114 &6685225876220010549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479683872344138177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -413692930, guid: c1a957cff7a534cbab677bbff81abab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptAsset: {fileID: -4320198879241519195, guid: 6ad77877963f93c468acb63dc37b39da, type: 3}
+  ParaLuaBindingData:
+  - rid: 5760247010280603656
+  - rid: 5760247010280603657
+  - rid: 5760247010280603658
+  - rid: 5760247010280603659
+  - rid: 5760247010280603660
+  - rid: 5760247010280603661
+  - rid: 5760247010280603662
+  - rid: 5760247010280603663
+  IsServerScript: 0
+  IsManualedVar: 1
+  eNetState: 0
+  autoUpdate: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 5760247010280603656
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: RotationAxis
+        Data: {x: 0, y: 0, z: 1}
+    - rid: 5760247010280603657
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: UseLocalSpace
+        Data: 1
+    - rid: 5760247010280603658
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: RotateAngle
+        Data: 90
+    - rid: 5760247010280603659
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: RotateSpeed
+        Data: 0
+    - rid: 5760247010280603660
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: StopDuration
+        Data: 0
+    - rid: 5760247010280603661
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: AutoPlay
+        Data: 1
+    - rid: 5760247010280603662
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: StartAtEnd
+        Data: 0
+    - rid: 5760247010280603663
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: PingPong
+        Data: 1
 --- !u!1 &2053921578110588913
 GameObject:
   m_ObjectHideFlags: 0
@@ -41,6 +128,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4033807832096742966}
+  - component: {fileID: 8241933111644116886}
+  - component: {fileID: 9106824844448004331}
   m_Layer: 0
   m_Name: Root
   m_TagString: Untagged
@@ -64,6 +153,98 @@ Transform:
   m_Father: {fileID: 5839961311583432460}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8241933111644116886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053921578110588913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 540439951, guid: 3ead8c7f8efe8473b8d110669e8128d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NetGUID:
+    n1: 4726859682006873208
+    n2: 2237598699076343841
+  RunContext: 0
+--- !u!114 &9106824844448004331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053921578110588913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -413692930, guid: c1a957cff7a534cbab677bbff81abab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptAsset: {fileID: -4320198879241519195, guid: 9ea397be019cb5d4a8bc3b9adec9bb22, type: 3}
+  ParaLuaBindingData:
+  - rid: 5760247010280603664
+  - rid: 5760247010280603665
+  - rid: 5760247010280603666
+  - rid: 5760247010280603667
+  - rid: 5760247010280603668
+  - rid: 5760247010280603669
+  - rid: 5760247010280603670
+  - rid: 5760247010280603671
+  - rid: 5760247010280603672
+  IsServerScript: 0
+  IsManualedVar: 1
+  eNetState: 0
+  autoUpdate: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 5760247010280603664
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: OrbitCenter
+        Data: {fileID: 0}
+        varType: UnityEngine.Transform
+    - rid: 5760247010280603665
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: OrbitCenterPosition
+        Data: {x: 0, y: 0, z: 0}
+    - rid: 5760247010280603666
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: OrbitAxis
+        Data: {x: 0, y: 1, z: 0}
+    - rid: 5760247010280603667
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: OrbitLoops
+        Data: 50
+    - rid: 5760247010280603668
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: AccelDuration
+        Data: 10
+    - rid: 5760247010280603669
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: CruiseDuration
+        Data: 10
+    - rid: 5760247010280603670
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: DecelDuration
+        Data: 10
+    - rid: 5760247010280603671
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: AutoPlay
+        Data: 1
+    - rid: 5760247010280603672
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: KeepOriginalRotation
+        Data: 0
 --- !u!1 &6503309408871921078
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,6 +287,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2575049163518856409}
+  - component: {fileID: 885160899639619119}
+  - component: {fileID: 7617607192068139402}
   m_Layer: 0
   m_Name: Spine01
   m_TagString: Untagged
@@ -121,7 +304,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7879350832940611879}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.04, y: 0, z: 0}
+  m_LocalPosition: {x: -0.3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -129,6 +312,91 @@ Transform:
   m_Father: {fileID: 4033807832096742966}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &885160899639619119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7879350832940611879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 540439951, guid: 3ead8c7f8efe8473b8d110669e8128d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NetGUID:
+    n1: 3311179668988868905
+    n2: 16552125388771544847
+  RunContext: 0
+--- !u!114 &7617607192068139402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7879350832940611879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -413692930, guid: c1a957cff7a534cbab677bbff81abab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptAsset: {fileID: -4320198879241519195, guid: 41565ba849586354ba3917f9bb56e1c6, type: 3}
+  ParaLuaBindingData:
+  - rid: 5760247010280603648
+  - rid: 5760247010280603649
+  - rid: 5760247010280603650
+  - rid: 5760247010280603651
+  - rid: 5760247010280603652
+  - rid: 5760247010280603653
+  - rid: 5760247010280603654
+  - rid: 5760247010280603655
+  IsServerScript: 0
+  IsManualedVar: 1
+  eNetState: 0
+  autoUpdate: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 5760247010280603648
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: MoveAxis
+        Data: {x: -1, y: 0, z: 0}
+    - rid: 5760247010280603649
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: UseLocalSpace
+        Data: 1
+    - rid: 5760247010280603650
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: MoveDistance
+        Data: 0.15
+    - rid: 5760247010280603651
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: MoveSpeed
+        Data: 0
+    - rid: 5760247010280603652
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: StopDuration
+        Data: 0
+    - rid: 5760247010280603653
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: AutoPlay
+        Data: 1
+    - rid: 5760247010280603654
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: StartAtEnd
+        Data: 0
+    - rid: 5760247010280603655
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: PingPong
+        Data: 1
 --- !u!1 &8373529027682301515
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,7 +586,7 @@ MonoBehaviour:
       type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
       data:
         varName: SlowSpeed
-        Data: 1.5
+        Data: 0
     - rid: 5760247007815401476
       type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
       data:
