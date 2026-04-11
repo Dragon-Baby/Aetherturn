@@ -9,8 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 826230391415408360}
-  - component: {fileID: 897804345806274669}
-  - component: {fileID: 2980999866156881604}
   m_Layer: 0
   m_Name: MainGear
   m_TagString: Untagged
@@ -33,79 +31,6 @@ Transform:
   m_Father: {fileID: 8293321318177245320}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &897804345806274669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2063997942291117080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -413692930, guid: c1a957cff7a534cbab677bbff81abab2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ScriptAsset: {fileID: -4320198879241519195, guid: b03e5f9067ec3e641a2a3e410419afa7, type: 3}
-  ParaLuaBindingData:
-  - rid: 5760246986891067398
-  - rid: 5760246986891067399
-  - rid: 5760246986891067400
-  - rid: 5760246986891067401
-  - rid: 5760246986891067402
-  - rid: 5760246986891067403
-  IsServerScript: 0
-  IsManualedVar: 1
-  eNetState: 0
-  autoUpdate: 1
-  references:
-    version: 2
-    RefIds:
-    - rid: 5760246986891067398
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: RotationAxis
-        Data: {x: 0, y: 0, z: 1}
-    - rid: 5760246986891067399
-      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
-      data:
-        varName: UseLocalSpace
-        Data: 1
-    - rid: 5760246986891067400
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: SlowSpeed
-        Data: 30
-    - rid: 5760246986891067401
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: FastSpeed
-        Data: 180
-    - rid: 5760246986891067402
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: StartBlend
-        Data: 0
-    - rid: 5760246986891067403
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: SmoothFactor
-        Data: 8
---- !u!114 &2980999866156881604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2063997942291117080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 540439951, guid: 3ead8c7f8efe8473b8d110669e8128d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NetGUID:
-    n1: 16830981522974485059
-    n2: 16493334349171491863
-  RunContext: 0
 --- !u!1 &2210520191148073736
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,8 +73,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7118278086190675316}
-  - component: {fileID: 2714207126416129169}
-  - component: {fileID: 2496318113605300845}
   m_Layer: 0
   m_Name: Gear03
   m_TagString: Untagged
@@ -172,79 +95,6 @@ Transform:
   m_Father: {fileID: 8293321318177245320}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2714207126416129169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4202356619840580337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -413692930, guid: c1a957cff7a534cbab677bbff81abab2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ScriptAsset: {fileID: -4320198879241519195, guid: b03e5f9067ec3e641a2a3e410419afa7, type: 3}
-  ParaLuaBindingData:
-  - rid: 5760246986891067404
-  - rid: 5760246986891067405
-  - rid: 5760246986891067406
-  - rid: 5760246986891067407
-  - rid: 5760246986891067408
-  - rid: 5760246986891067409
-  IsServerScript: 0
-  IsManualedVar: 1
-  eNetState: 0
-  autoUpdate: 1
-  references:
-    version: 2
-    RefIds:
-    - rid: 5760246986891067404
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: RotationAxis
-        Data: {x: 0, y: 0, z: 1}
-    - rid: 5760246986891067405
-      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
-      data:
-        varName: UseLocalSpace
-        Data: 1
-    - rid: 5760246986891067406
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: SlowSpeed
-        Data: -30
-    - rid: 5760246986891067407
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: FastSpeed
-        Data: -180
-    - rid: 5760246986891067408
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: StartBlend
-        Data: 0
-    - rid: 5760246986891067409
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: SmoothFactor
-        Data: 8
---- !u!114 &2496318113605300845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4202356619840580337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 540439951, guid: 3ead8c7f8efe8473b8d110669e8128d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NetGUID:
-    n1: 17909551756162192650
-    n2: 661437502465514981
-  RunContext: 0
 --- !u!1 &4412783060309855333
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,8 +104,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 530150380698128799}
-  - component: {fileID: 1841606309964566422}
-  - component: {fileID: 3007449518448181975}
   m_Layer: 0
   m_Name: Gear02
   m_TagString: Untagged
@@ -278,79 +126,6 @@ Transform:
   m_Father: {fileID: 8293321318177245320}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1841606309964566422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4412783060309855333}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -413692930, guid: c1a957cff7a534cbab677bbff81abab2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ScriptAsset: {fileID: -4320198879241519195, guid: b03e5f9067ec3e641a2a3e410419afa7, type: 3}
-  ParaLuaBindingData:
-  - rid: 5760246986891067410
-  - rid: 5760246986891067411
-  - rid: 5760246986891067412
-  - rid: 5760246986891067413
-  - rid: 5760246986891067414
-  - rid: 5760246986891067415
-  IsServerScript: 0
-  IsManualedVar: 1
-  eNetState: 0
-  autoUpdate: 1
-  references:
-    version: 2
-    RefIds:
-    - rid: 5760246986891067410
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: RotationAxis
-        Data: {x: 0, y: 0, z: 1}
-    - rid: 5760246986891067411
-      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
-      data:
-        varName: UseLocalSpace
-        Data: 1
-    - rid: 5760246986891067412
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: SlowSpeed
-        Data: 30
-    - rid: 5760246986891067413
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: FastSpeed
-        Data: 180
-    - rid: 5760246986891067414
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: StartBlend
-        Data: 0
-    - rid: 5760246986891067415
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: SmoothFactor
-        Data: 8
---- !u!114 &3007449518448181975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4412783060309855333}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 540439951, guid: 3ead8c7f8efe8473b8d110669e8128d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NetGUID:
-    n1: 11865482938118104129
-    n2: 7760130164650984269
-  RunContext: 0
 --- !u!1 &6371964407890248015
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,8 +260,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2374066066483915142}
-  - component: {fileID: 2281476341545265019}
-  - component: {fileID: 3552333171120215214}
   m_Layer: 0
   m_Name: Gear01
   m_TagString: Untagged
@@ -509,76 +282,3 @@ Transform:
   m_Father: {fileID: 8293321318177245320}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2281476341545265019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8385498825880766145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -413692930, guid: c1a957cff7a534cbab677bbff81abab2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ScriptAsset: {fileID: -4320198879241519195, guid: b03e5f9067ec3e641a2a3e410419afa7, type: 3}
-  ParaLuaBindingData:
-  - rid: 5760246986891067392
-  - rid: 5760246986891067393
-  - rid: 5760246986891067394
-  - rid: 5760246986891067395
-  - rid: 5760246986891067396
-  - rid: 5760246986891067397
-  IsServerScript: 0
-  IsManualedVar: 1
-  eNetState: 0
-  autoUpdate: 1
-  references:
-    version: 2
-    RefIds:
-    - rid: 5760246986891067392
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: RotationAxis
-        Data: {x: 0, y: 0, z: 1}
-    - rid: 5760246986891067393
-      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
-      data:
-        varName: UseLocalSpace
-        Data: 1
-    - rid: 5760246986891067394
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: SlowSpeed
-        Data: -30
-    - rid: 5760246986891067395
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: FastSpeed
-        Data: -180
-    - rid: 5760246986891067396
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: StartBlend
-        Data: 0
-    - rid: 5760246986891067397
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: SmoothFactor
-        Data: 8
---- !u!114 &3552333171120215214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8385498825880766145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 540439951, guid: 3ead8c7f8efe8473b8d110669e8128d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NetGUID:
-    n1: 8351780566729505235
-    n2: 8955185569150352846
-  RunContext: 0

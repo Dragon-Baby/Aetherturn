@@ -45,6 +45,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2131675023168108543}
+  - component: {fileID: 759715590470548746}
+  - component: {fileID: 3009629960246070944}
   m_Layer: 0
   m_Name: Landscape
   m_TagString: Untagged
@@ -71,6 +73,703 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &759715590470548746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131675023168108542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 540439951, guid: 3ead8c7f8efe8473b8d110669e8128d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NetGUID:
+    n1: 7973410831153112591
+    n2: 16006824765100496911
+  RunContext: 0
+--- !u!114 &3009629960246070944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131675023168108542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -413692930, guid: c1a957cff7a534cbab677bbff81abab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptAsset: {fileID: -4320198879241519195, guid: 1c3b45195703d3745958dac51c25b187, type: 3}
+  ParaLuaBindingData:
+  - rid: 5760247124674215936
+  - rid: 5760247124674215937
+  - rid: 5760247124674215938
+  - rid: 5760247124674215939
+  - rid: 5760247124674215940
+  - rid: 5760247124674215941
+  - rid: 5760247124674215942
+  - rid: 5760247124674215943
+  - rid: 5760247124674215944
+  - rid: 5760247124674215945
+  - rid: 5760247124674215946
+  - rid: 5760247124674215947
+  - rid: 5760247124674215948
+  - rid: 5760247124674215949
+  - rid: 5760247124674215950
+  - rid: 5760247124674215951
+  - rid: 5760247124674215952
+  - rid: 5760247124674215953
+  - rid: 5760247124674215954
+  - rid: 5760247124674215955
+  - rid: 5760247124674215956
+  - rid: 5760247124674215957
+  - rid: 5760247124674215958
+  - rid: 5760247124674215959
+  - rid: 5760247124674215960
+  - rid: 5760247124674215961
+  - rid: 5760247124674215962
+  - rid: 5760247124674215963
+  - rid: 5760247124674215964
+  - rid: 5760247124674215965
+  - rid: 5760247124674215966
+  - rid: 5760247124674215967
+  - rid: 5760247124674215968
+  - rid: 5760247124674215969
+  - rid: 5760247124674215970
+  - rid: 5760247124674215971
+  - rid: 5760247124674215980
+  - rid: 5760247124674215981
+  - rid: 5760247124674215982
+  - rid: 5760247124674215995
+  - rid: 5760247124674215996
+  - rid: 5760247124674215997
+  - rid: 5760247124674215998
+  - rid: 5760247124674215973
+  - rid: 5760247124674215974
+  - rid: 5760247124674215975
+  - rid: 5760247124674215976
+  - rid: 5760247124674215977
+  - rid: 5760247124674216005
+  - rid: 5760247124674216006
+  - rid: 5760247124674216007
+  - rid: 5760247124674216008
+  - rid: 5760247124674216009
+  - rid: 5760247124674216010
+  - rid: 5760247124674216011
+  - rid: 5760247124674216012
+  - rid: 5760247124674216013
+  - rid: 5760247124674216014
+  - rid: 5760247124674216015
+  - rid: 5760247124674216016
+  - rid: 5760247124674216017
+  - rid: 5760247124674216018
+  - rid: 5760247124674216019
+  - rid: 5760247124674216020
+  - rid: 5760247124674216021
+  - rid: 5760247124674216022
+  - rid: 5760247124674216023
+  - rid: 5760247124674216024
+  - rid: 5760247124674216025
+  - rid: 5760247124674216026
+  - rid: 5760247124674216027
+  - rid: 5760247124674216028
+  - rid: 5760247124674216029
+  - rid: 5760247124674216030
+  - rid: 5760247124674216031
+  - rid: 5760247124674216032
+  - rid: 5760247124674216033
+  - rid: 5760247124674216034
+  - rid: 5760247124674216035
+  - rid: 5760247124674216036
+  - rid: 5760247124674216037
+  - rid: 5760247124674216038
+  - rid: 5760247124674216039
+  - rid: 5760247124674216040
+  - rid: 5760247124674216041
+  - rid: 5760247124674216042
+  - rid: 5760247124674216043
+  - rid: 5760247124674216044
+  - rid: 5760247124674216045
+  - rid: 5760247124674216046
+  - rid: 5760247124674216047
+  - rid: 5760247124674216048
+  - rid: 5760247124674216049
+  - rid: 5760247124674216050
+  - rid: 5760247124674216051
+  - rid: 5760247124674216052
+  - rid: 5760247124674216053
+  - rid: 5760247124674215999
+  - rid: 5760247124674216000
+  - rid: 5760247124674216001
+  - rid: 5760247124674216002
+  - rid: 5760247124674216003
+  - rid: 5760247124674216004
+  - rid: 5760247124674215978
+  - rid: 5760247124674215979
+  IsServerScript: 0
+  IsManualedVar: 1
+  eNetState: 0
+  autoUpdate: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 5760247124674215936
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: PendulumA
+        Data: {fileID: 4334493613981413091}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674215937
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: PendulumB
+        Data: {fileID: 5956639417190788309}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674215938
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: PendulumAxisA
+        Data: {x: 1, y: 0, z: 0}
+    - rid: 5760247124674215939
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: PendulumAxisB
+        Data: {x: 1, y: 0, z: 0}
+    - rid: 5760247124674215940
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: PendulumUseLocalA
+        Data: 1
+    - rid: 5760247124674215941
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: PendulumUseLocalB
+        Data: 1
+    - rid: 5760247124674215942
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: PendulumMaxAngleA
+        Data: 60
+    - rid: 5760247124674215943
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: PendulumMaxAngleB
+        Data: 60
+    - rid: 5760247124674215944
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: PendulumSpeedA
+        Data: 2
+    - rid: 5760247124674215945
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: PendulumSpeedB
+        Data: 2
+    - rid: 5760247124674215946
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: PendulumStartPhaseA
+        Data: 0
+    - rid: 5760247124674215947
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: PendulumStartPhaseB
+        Data: 0
+    - rid: 5760247124674215948
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: PendulumStopAngleA
+        Data: 0
+    - rid: 5760247124674215949
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: PendulumStopAngleB
+        Data: 0
+    - rid: 5760247124674215950
+      type: {class: DouyinLuaDataVarInt, ns: , asm: com.douyin.script}
+      data:
+        varName: PendulumSwingCount
+        Data: 17
+    - rid: 5760247124674215951
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: ExtenderA
+        Data: {fileID: 7541381015055113074}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674215952
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: ExtenderB
+        Data: {fileID: 442851485006207300}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674215953
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: ExtendAxisA
+        Data: {x: -1, y: 0, z: 0}
+    - rid: 5760247124674215954
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: ExtendAxisB
+        Data: {x: -1, y: 0, z: 0}
+    - rid: 5760247124674215955
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: ExtendUseLocalA
+        Data: 1
+    - rid: 5760247124674215956
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: ExtendUseLocalB
+        Data: 1
+    - rid: 5760247124674215957
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: ExtendDistanceA
+        Data: 0.2
+    - rid: 5760247124674215958
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: ExtendDistanceB
+        Data: 0.2
+    - rid: 5760247124674215959
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: ExtendSpeedA
+        Data: 0.05
+    - rid: 5760247124674215960
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: ExtendSpeedB
+        Data: 0.05
+    - rid: 5760247124674215961
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: BallA
+        Data: {fileID: 379276287485927684}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674215962
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: BallB
+        Data: {fileID: 7768279180426568498}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674215963
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: BallAxisA
+        Data: {x: 0, y: 0, z: 1}
+    - rid: 5760247124674215964
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: BallAxisB
+        Data: {x: 0, y: 0, z: 1}
+    - rid: 5760247124674215965
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: BallUseLocalA
+        Data: 1
+    - rid: 5760247124674215966
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: BallUseLocalB
+        Data: 1
+    - rid: 5760247124674215967
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: BallRotateAngleA
+        Data: 90
+    - rid: 5760247124674215968
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: BallRotateAngleB
+        Data: 90
+    - rid: 5760247124674215969
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: BallRotateSpeedA
+        Data: 10
+    - rid: 5760247124674215970
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: BallRotateSpeedB
+        Data: 10
+    - rid: 5760247124674215971
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: CenterTransform
+        Data: {fileID: 3389919790101554990}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674215973
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: CenterUseLocalSpace
+        Data: 0
+    - rid: 5760247124674215974
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: CenterSpinLoops
+        Data: 50
+    - rid: 5760247124674215975
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: CenterAccelDuration
+        Data: 10
+    - rid: 5760247124674215976
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: CenterCruiseDuration
+        Data: 10
+    - rid: 5760247124674215977
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: CenterDecelDuration
+        Data: 10
+    - rid: 5760247124674215978
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: AutoPlay
+        Data: 1
+    - rid: 5760247124674215979
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: LoopSequence
+        Data: 1
+    - rid: 5760247124674215980
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: CenterTransformB
+        Data: {fileID: 622185466498129719}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674215981
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: CenterTransformC
+        Data: {fileID: 9002345288942864797}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674215982
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: CenterTransformD
+        Data: {fileID: 1325127426168671147}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674215995
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: CenterOrbitPoint
+        Data: {fileID: 622185466498129719}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674215996
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: CenterOrbitPointB
+        Data: {fileID: 622185466498129719}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674215997
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: CenterOrbitPointC
+        Data: {fileID: 622185466498129719}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674215998
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: CenterOrbitPointD
+        Data: {fileID: 622185466498129719}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674215999
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: DelayAfterPendulum
+        Data: 1
+    - rid: 5760247124674216000
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: DelayAfterExtend
+        Data: 1
+    - rid: 5760247124674216001
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: DelayAfterBallRotate
+        Data: 1
+    - rid: 5760247124674216002
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: DelayAfterCenterSpin
+        Data: 1
+    - rid: 5760247124674216003
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: DelayAfterBallReset
+        Data: 1
+    - rid: 5760247124674216004
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: DelayAfterRetract
+        Data: 1
+    - rid: 5760247124674216005
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: GearTransform1
+        Data: {fileID: 3389919791283576708}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674216006
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: GearTransform2
+        Data: {fileID: 622185467950917533}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674216007
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: GearTransform3
+        Data: {fileID: 7867857406557193078}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674216008
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: GearTransform4
+        Data: {fileID: 328295194478883050}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674216009
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: GearTransform5
+        Data: {fileID: 3631938912158337353}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674216010
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: GearTransform6
+        Data: {fileID: 1571234305395667280}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674216011
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: GearTransform7
+        Data: {fileID: 8096462247722702267}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674216012
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: GearTransform8
+        Data: {fileID: 1865054952896488999}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674216013
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: GearTransform9
+        Data: {fileID: 6347619508947428150}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674216014
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: GearTransform10
+        Data: {fileID: 9204898300069632815}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674216015
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: GearTransform11
+        Data: {fileID: 1885903205253267396}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674216016
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: GearTransform12
+        Data: {fileID: 8327853782524300376}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674216017
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: GearTransform13
+        Data: {fileID: 134518137212777443}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674216018
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: GearTransform14
+        Data: {fileID: 2771121130439953402}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674216019
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: GearTransform15
+        Data: {fileID: 4892795126967480081}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674216020
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: GearTransform16
+        Data: {fileID: 3051429695083879565}
+        varType: UnityEngine.Transform
+    - rid: 5760247124674216021
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: GearAxis1
+        Data: {x: 0, y: 0, z: 1}
+    - rid: 5760247124674216022
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: GearAxis2
+        Data: {x: 0, y: 0, z: 1}
+    - rid: 5760247124674216023
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: GearAxis3
+        Data: {x: 0, y: 0, z: 1}
+    - rid: 5760247124674216024
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: GearAxis4
+        Data: {x: 0, y: 0, z: 1}
+    - rid: 5760247124674216025
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: GearAxis5
+        Data: {x: 0, y: 0, z: 1}
+    - rid: 5760247124674216026
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: GearAxis6
+        Data: {x: 0, y: 0, z: 1}
+    - rid: 5760247124674216027
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: GearAxis7
+        Data: {x: 0, y: 0, z: 1}
+    - rid: 5760247124674216028
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: GearAxis8
+        Data: {x: 0, y: 0, z: 1}
+    - rid: 5760247124674216029
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: GearAxis9
+        Data: {x: 0, y: 0, z: 1}
+    - rid: 5760247124674216030
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: GearAxis10
+        Data: {x: 0, y: 0, z: 1}
+    - rid: 5760247124674216031
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: GearAxis11
+        Data: {x: 0, y: 0, z: 1}
+    - rid: 5760247124674216032
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: GearAxis12
+        Data: {x: 0, y: 0, z: 1}
+    - rid: 5760247124674216033
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: GearAxis13
+        Data: {x: 0, y: 0, z: 1}
+    - rid: 5760247124674216034
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: GearAxis14
+        Data: {x: 0, y: 0, z: 1}
+    - rid: 5760247124674216035
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: GearAxis15
+        Data: {x: 0, y: 0, z: 1}
+    - rid: 5760247124674216036
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: GearAxis16
+        Data: {x: 0, y: 0, z: 1}
+    - rid: 5760247124674216037
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: GearSpeed1
+        Data: 500
+    - rid: 5760247124674216038
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: GearSpeed2
+        Data: -500
+    - rid: 5760247124674216039
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: GearSpeed3
+        Data: 500
+    - rid: 5760247124674216040
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: GearSpeed4
+        Data: -500
+    - rid: 5760247124674216041
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: GearSpeed5
+        Data: 500
+    - rid: 5760247124674216042
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: GearSpeed6
+        Data: -500
+    - rid: 5760247124674216043
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: GearSpeed7
+        Data: 500
+    - rid: 5760247124674216044
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: GearSpeed8
+        Data: -500
+    - rid: 5760247124674216045
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: GearSpeed9
+        Data: 500
+    - rid: 5760247124674216046
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: GearSpeed10
+        Data: -500
+    - rid: 5760247124674216047
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: GearSpeed11
+        Data: 500
+    - rid: 5760247124674216048
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: GearSpeed12
+        Data: -500
+    - rid: 5760247124674216049
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: GearSpeed13
+        Data: 500
+    - rid: 5760247124674216050
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: GearSpeed14
+        Data: -500
+    - rid: 5760247124674216051
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: GearSpeed15
+        Data: 500
+    - rid: 5760247124674216052
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: GearSpeed16
+        Data: -500
+    - rid: 5760247124674216053
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: GearMinSpeedFactor
+        Data: 0.1
 --- !u!1001 &1150962813335975426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -144,9 +843,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+--- !u!4 &328295194478883050 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 826230391415408360, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+  m_PrefabInstance: {fileID: 1150962813335975426}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &622185467950917533 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 530150380698128799, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+  m_PrefabInstance: {fileID: 1150962813335975426}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1882366513094512560 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1578099122492537266, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+  m_PrefabInstance: {fileID: 1150962813335975426}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3389919791283576708 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2374066066483915142, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+  m_PrefabInstance: {fileID: 1150962813335975426}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7867857406557193078 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7118278086190675316, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
   m_PrefabInstance: {fileID: 1150962813335975426}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1339079478852772047
@@ -225,6 +944,26 @@ PrefabInstance:
 --- !u!4 &537007502824118653 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1578099122492537266, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+  m_PrefabInstance: {fileID: 1339079478852772047}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1571234305395667280 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 530150380698128799, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+  m_PrefabInstance: {fileID: 1339079478852772047}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1865054952896488999 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 826230391415408360, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+  m_PrefabInstance: {fileID: 1339079478852772047}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3631938912158337353 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2374066066483915142, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+  m_PrefabInstance: {fileID: 1339079478852772047}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8096462247722702267 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7118278086190675316, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
   m_PrefabInstance: {fileID: 1339079478852772047}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2131675022305608349
@@ -370,6 +1109,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: cd43986c4d1d54c4a82149742d13c7f6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
+--- !u!4 &622185466498129719 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1528771143399657414, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
+  m_PrefabInstance: {fileID: 2131675024203731185}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1882366511859971866 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
@@ -380,200 +1124,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -5575929999083587617, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
   m_PrefabInstance: {fileID: 2131675024203731185}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3658137053551755981 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -5813747552983854532, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
-  m_PrefabInstance: {fileID: 2131675024203731185}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5490942527994668845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3658137053551755981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 540439951, guid: 3ead8c7f8efe8473b8d110669e8128d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NetGUID:
-    n1: 2591479458986594850
-    n2: 7760130164650984269
-  RunContext: 0
---- !u!114 &9126060905419983339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3658137053551755981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -413692930, guid: c1a957cff7a534cbab677bbff81abab2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ScriptAsset: {fileID: -4320198879241519195, guid: 9ea397be019cb5d4a8bc3b9adec9bb22, type: 3}
-  ParaLuaBindingData:
-  - rid: 5760247010280603682
-  - rid: 5760247010280603683
-  - rid: 5760247010280603684
-  - rid: 5760247010280603685
-  - rid: 5760247010280603686
-  - rid: 5760247010280603687
-  - rid: 5760247010280603688
-  - rid: 5760247010280603689
-  - rid: 5760247010280603690
-  IsServerScript: 0
-  IsManualedVar: 1
-  eNetState: 0
-  autoUpdate: 1
-  references:
-    version: 2
-    RefIds:
-    - rid: 5760247010280603682
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: OrbitCenter
-        Data: {fileID: 3389919790101554990}
-        varType: UnityEngine.Transform
-    - rid: 5760247010280603683
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: OrbitCenterPosition
-        Data: {x: 0, y: 0, z: 0}
-    - rid: 5760247010280603684
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: OrbitAxis
-        Data: {x: 0, y: 1, z: 0}
-    - rid: 5760247010280603685
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: OrbitLoops
-        Data: 50
-    - rid: 5760247010280603686
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: AccelDuration
-        Data: 10
-    - rid: 5760247010280603687
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: CruiseDuration
-        Data: 10
-    - rid: 5760247010280603688
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: DecelDuration
-        Data: 10
-    - rid: 5760247010280603689
-      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
-      data:
-        varName: AutoPlay
-        Data: 1
-    - rid: 5760247010280603690
-      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
-      data:
-        varName: KeepOriginalRotation
-        Data: 0
---- !u!1 &8909892836477945961 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -1859010864109283176, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
-  m_PrefabInstance: {fileID: 2131675024203731185}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4773470767923483949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8909892836477945961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 540439951, guid: 3ead8c7f8efe8473b8d110669e8128d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NetGUID:
-    n1: 2819536830337025939
-    n2: 8955185569150352846
-  RunContext: 0
---- !u!114 &3694328279669658413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8909892836477945961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -413692930, guid: c1a957cff7a534cbab677bbff81abab2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ScriptAsset: {fileID: -4320198879241519195, guid: 9ea397be019cb5d4a8bc3b9adec9bb22, type: 3}
-  ParaLuaBindingData:
-  - rid: 5760247010280603673
-  - rid: 5760247010280603674
-  - rid: 5760247010280603675
-  - rid: 5760247010280603676
-  - rid: 5760247010280603677
-  - rid: 5760247010280603678
-  - rid: 5760247010280603679
-  - rid: 5760247010280603680
-  - rid: 5760247010280603681
-  IsServerScript: 0
-  IsManualedVar: 1
-  eNetState: 0
-  autoUpdate: 1
-  references:
-    version: 2
-    RefIds:
-    - rid: 5760247010280603673
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: OrbitCenter
-        Data: {fileID: 3389919790101554990}
-        varType: UnityEngine.Transform
-    - rid: 5760247010280603674
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: OrbitCenterPosition
-        Data: {x: 0, y: 0, z: 0}
-    - rid: 5760247010280603675
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: OrbitAxis
-        Data: {x: 0, y: 1, z: 0}
-    - rid: 5760247010280603676
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: OrbitLoops
-        Data: 50
-    - rid: 5760247010280603677
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: AccelDuration
-        Data: 10
-    - rid: 5760247010280603678
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: CruiseDuration
-        Data: 10
-    - rid: 5760247010280603679
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: DecelDuration
-        Data: 10
-    - rid: 5760247010280603680
-      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
-      data:
-        varName: AutoPlay
-        Data: 1
-    - rid: 5760247010280603681
-      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
-      data:
-        varName: KeepOriginalRotation
-        Data: 0
 --- !u!1001 &2391278404956527205
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -647,9 +1197,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+--- !u!4 &134518137212777443 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2374066066483915142, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+  m_PrefabInstance: {fileID: 2391278404956527205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2771121130439953402 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 530150380698128799, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+  m_PrefabInstance: {fileID: 2391278404956527205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3051429695083879565 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 826230391415408360, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+  m_PrefabInstance: {fileID: 2391278404956527205}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3803588679192732631 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1578099122492537266, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+  m_PrefabInstance: {fileID: 2391278404956527205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4892795126967480081 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7118278086190675316, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
   m_PrefabInstance: {fileID: 2391278404956527205}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2709260999696438685
@@ -729,6 +1299,26 @@ PrefabInstance:
       objectReference: {fileID: 3389919790101554990}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+--- !u!4 &442851485006207300 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2575049163518856409, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+  m_PrefabInstance: {fileID: 2709260999696438685}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1325127426168671147 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4033807832096742966, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+  m_PrefabInstance: {fileID: 2709260999696438685}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5956639417190788309 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8589210545977489736, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+  m_PrefabInstance: {fileID: 2709260999696438685}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7768279180426568498 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5645053534062425775, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+  m_PrefabInstance: {fileID: 2709260999696438685}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8399933869365508753 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5839961311583432460, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
@@ -811,9 +1401,29 @@ PrefabInstance:
       objectReference: {fileID: 3389919790101554990}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+--- !u!4 &379276287485927684 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5645053534062425775, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+  m_PrefabInstance: {fileID: 5410010083470432171}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1882366513772312743 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5839961311583432460, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+  m_PrefabInstance: {fileID: 5410010083470432171}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4334493613981413091 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8589210545977489736, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+  m_PrefabInstance: {fileID: 5410010083470432171}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7541381015055113074 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2575049163518856409, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+  m_PrefabInstance: {fileID: 5410010083470432171}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9002345288942864797 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4033807832096742966, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
   m_PrefabInstance: {fileID: 5410010083470432171}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8711411718916639408
@@ -889,8 +1499,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+--- !u!4 &1885903205253267396 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7118278086190675316, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+  m_PrefabInstance: {fileID: 8711411718916639408}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6347619508947428150 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2374066066483915142, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+  m_PrefabInstance: {fileID: 8711411718916639408}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7855313523754562306 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1578099122492537266, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+  m_PrefabInstance: {fileID: 8711411718916639408}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8327853782524300376 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 826230391415408360, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+  m_PrefabInstance: {fileID: 8711411718916639408}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9204898300069632815 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 530150380698128799, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
   m_PrefabInstance: {fileID: 8711411718916639408}
   m_PrefabAsset: {fileID: 0}
