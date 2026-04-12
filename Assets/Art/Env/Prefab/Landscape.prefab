@@ -151,6 +151,8 @@ MonoBehaviour:
   - rid: 5760247124674215975
   - rid: 5760247124674215976
   - rid: 5760247124674215977
+  - rid: 5760247141416304640
+  - rid: 5760247141416304641
   - rid: 5760247124674216005
   - rid: 5760247124674216006
   - rid: 5760247124674216007
@@ -291,7 +293,7 @@ MonoBehaviour:
       type: {class: DouyinLuaDataVarInt, ns: , asm: com.douyin.script}
       data:
         varName: PendulumSwingCount
-        Data: 17
+        Data: 1
     - rid: 5760247124674215951
       type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
       data:
@@ -770,6 +772,18 @@ MonoBehaviour:
       data:
         varName: GearMinSpeedFactor
         Data: 0.1
+    - rid: 5760247141416304640
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: OrbitPulseMaterial
+        Data: {fileID: 2100000, guid: ccac23c7283771842a182e42750c4c86, type: 2}
+        varType: UnityEngine.Material
+    - rid: 5760247141416304641
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: OrbitPulseParticle
+        Data: {fileID: 0}
+        varType: UnityEngine.ParticleSystem
 --- !u!1001 &1150962813335975426
 PrefabInstance:
   m_ObjectHideFlags: 0

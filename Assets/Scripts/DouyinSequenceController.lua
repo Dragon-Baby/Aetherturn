@@ -49,6 +49,8 @@
 ---@var CenterAccelDuration     :float = 1
 ---@var CenterCruiseDuration    :float = 1
 ---@var CenterDecelDuration     :float = 1
+---@var SceneEnvironment        :DouyinSceneEnvironment
+---@var OrbitPulseParticle      :UnityEngine.ParticleSystem
 
 ---@var GearTransform1          :UnityEngine.Transform
 ---@var GearTransform2          :UnityEngine.Transform
@@ -133,6 +135,20 @@ local extenders = {}
 local balls = {}
 local centerSpins = {}
 local gears = {}
+local orbitPulseActive = false
+local orbitPulseElapsed = 0
+local orbitPulseDuration = 0
+local orbitPulseCompleted = false
+local orbitPulseCycleCount = 0
+local orbitPulseTargetReverseBlend = nil
+local currentEnvironmentIndex = 0
+local cachedSkyMaterials = {}
+local pendingEnvironmentIndex = nil
+local pendingEnvironmentTimer = 0
+local pendingSourceEnvironmentIndex = nil
+local pendingSourceMaterial = nil
+local loggedSkyMaterialAccessFailure = false
+local loggedSkyMaterialNil = false
 
 local function ClampNonNegative(value, defaultValue)
     if value == nil then
@@ -584,6 +600,252 @@ local function ApplyCenterOrbit(spin, angle)
     spin.currentAngle = angle
 end
 
+local GetActiveSkyMaterial
+local ApplySkyPulseStateToKnownMaterials
+
+local function ResetOrbitPulseEffects()
+    orbitPulseActive = false
+    orbitPulseElapsed = 0
+    orbitPulseDuration = 0
+
+    local activeSkyMaterial = GetActiveSkyMaterial()
+    if activeSkyMaterial ~= nil then
+        cachedSkyMaterials[currentEnvironmentIndex] = activeSkyMaterial
+        ApplySkyPulseStateToKnownMaterials(activeSkyMaterial:GetFloat("_ReverseBlend"), 0)
+        return
+    end
+end
+
+local function ResetOrbitPulseCycleState()
+    orbitPulseCompleted = false
+    orbitPulseTargetReverseBlend = nil
+    ResetOrbitPulseEffects()
+end
+
+local function ChangeEnvironmentByIndex(envIndex, duration)
+    -- Debug: temporarily disable environment switching to verify whether
+    -- the issue comes from Change() swapping to another sky material instance.
+    return false
+end
+
+GetActiveSkyMaterial = function()
+    if SceneEnvironment == nil then
+        if not loggedSkyMaterialAccessFailure then
+            print("[DouyinSequenceController] skyMaterial unavailable: SceneEnvironment instance is nil")
+            loggedSkyMaterialAccessFailure = true
+        end
+        return nil
+    end
+
+    local ok, material = pcall(function()
+        return SceneEnvironment.settings.skyMaterial
+    end)
+    if not ok then
+        if not loggedSkyMaterialAccessFailure then
+            print("[DouyinSequenceController] SceneEnvironment.settings.skyMaterial access failed: " .. tostring(material))
+            loggedSkyMaterialAccessFailure = true
+        end
+        return nil
+    end
+
+    if material ~= nil then
+        loggedSkyMaterialAccessFailure = false
+        loggedSkyMaterialNil = false
+        return material
+    end
+
+    if not loggedSkyMaterialNil then
+        print("[DouyinSequenceController] skyMaterial is nil for envIndex=" .. tostring(currentEnvironmentIndex))
+        loggedSkyMaterialNil = true
+    end
+    return nil
+end
+
+local function CopySkyPulseState(sourceMaterial, targetMaterial)
+    if sourceMaterial == nil or targetMaterial == nil then
+        return
+    end
+
+    local reverseBlend = sourceMaterial:GetFloat("_ReverseBlend")
+    local pulseProgress = sourceMaterial:GetFloat("_PulseProgress")
+    targetMaterial:SetFloat("_ReverseBlend", reverseBlend)
+    targetMaterial:SetFloat("_PulseProgress", pulseProgress)
+end
+
+ApplySkyPulseStateToKnownMaterials = function(reverseBlend, pulseProgress)
+    local activeMaterial = GetActiveSkyMaterial()
+    if activeMaterial ~= nil then
+        activeMaterial:SetFloat("_ReverseBlend", reverseBlend)
+        activeMaterial:SetFloat("_PulseProgress", pulseProgress)
+    end
+end
+
+local function CompletePendingEnvironmentTransition()
+    if pendingEnvironmentIndex == nil then
+        return
+    end
+
+    local sourceMaterial = pendingSourceMaterial or cachedSkyMaterials[pendingSourceEnvironmentIndex]
+    local targetMaterial = GetActiveSkyMaterial()
+
+    if targetMaterial ~= nil then
+        cachedSkyMaterials[pendingEnvironmentIndex] = targetMaterial
+        CopySkyPulseState(sourceMaterial, targetMaterial)
+    elseif cachedSkyMaterials[pendingEnvironmentIndex] ~= nil then
+        CopySkyPulseState(sourceMaterial, cachedSkyMaterials[pendingEnvironmentIndex])
+    end
+
+    currentEnvironmentIndex = pendingEnvironmentIndex
+    pendingEnvironmentIndex = nil
+    pendingEnvironmentTimer = 0
+    pendingSourceEnvironmentIndex = nil
+    pendingSourceMaterial = nil
+end
+
+local function UpdatePendingEnvironmentTransition(deltaTime)
+    if pendingEnvironmentIndex == nil then
+        return
+    end
+
+    local sourceMaterial = pendingSourceMaterial or cachedSkyMaterials[pendingSourceEnvironmentIndex]
+    local cachedTargetMaterial = cachedSkyMaterials[pendingEnvironmentIndex]
+    if sourceMaterial ~= nil and cachedTargetMaterial ~= nil then
+        CopySkyPulseState(sourceMaterial, cachedTargetMaterial)
+    end
+
+    local liveSkyMaterial = GetActiveSkyMaterial()
+    if liveSkyMaterial ~= nil and liveSkyMaterial ~= sourceMaterial then
+        cachedSkyMaterials[pendingEnvironmentIndex] = liveSkyMaterial
+        CopySkyPulseState(sourceMaterial, liveSkyMaterial)
+        currentEnvironmentIndex = pendingEnvironmentIndex
+        pendingEnvironmentIndex = nil
+        pendingEnvironmentTimer = 0
+        pendingSourceEnvironmentIndex = nil
+        pendingSourceMaterial = nil
+        return
+    end
+
+    pendingEnvironmentTimer = pendingEnvironmentTimer - deltaTime
+    if pendingEnvironmentTimer <= 0 then
+        CompletePendingEnvironmentTransition()
+    end
+end
+
+local function SyncEnvironmentWithSkyboxTransition(duration)
+    if pendingEnvironmentIndex ~= nil then
+        return
+    end
+
+    local sourceMaterial = GetActiveSkyMaterial()
+    if sourceMaterial == nil then
+        return
+    end
+
+    cachedSkyMaterials[currentEnvironmentIndex] = sourceMaterial
+
+    local reverseBlend = sourceMaterial:GetFloat("_ReverseBlend")
+    local targetEnvIndex = reverseBlend > 0.5 and 0 or 1
+
+    local changed = ChangeEnvironmentByIndex(targetEnvIndex, duration)
+    if not changed then
+        return
+    end
+
+    pendingEnvironmentIndex = targetEnvIndex
+    pendingEnvironmentTimer = ClampNonNegative(duration, 0)
+    pendingSourceEnvironmentIndex = currentEnvironmentIndex
+    pendingSourceMaterial = sourceMaterial
+
+    if cachedSkyMaterials[targetEnvIndex] ~= nil then
+        CopySkyPulseState(sourceMaterial, cachedSkyMaterials[targetEnvIndex])
+    end
+
+    if pendingEnvironmentTimer <= 0 then
+        CompletePendingEnvironmentTransition()
+    end
+end
+
+local function StartOrbitPulseCycle(spin)
+    if orbitPulseCompleted then
+        return
+    end
+
+    orbitPulseActive = true
+    orbitPulseElapsed = 0
+    orbitPulseDuration = math.max(spin.totalDuration, 0.01)
+
+    SyncEnvironmentWithSkyboxTransition(orbitPulseDuration)
+
+    local skyMaterial = GetActiveSkyMaterial()
+    if skyMaterial ~= nil then
+        if orbitPulseCycleCount > 0 then
+            local currentReverseBlend = skyMaterial:GetFloat("_ReverseBlend")
+            orbitPulseTargetReverseBlend = currentReverseBlend > 0.5 and 0 or 1
+            ApplySkyPulseStateToKnownMaterials(orbitPulseTargetReverseBlend, 0)
+        else
+            orbitPulseTargetReverseBlend = skyMaterial:GetFloat("_ReverseBlend")
+        end
+    end
+
+    if OrbitPulseParticle ~= nil then
+        if OrbitPulseParticle.isPlaying then
+            OrbitPulseParticle:Stop()
+            OrbitPulseParticle:Clear()
+        end
+        OrbitPulseParticle:Play()
+    end
+end
+
+local function CompleteOrbitPulseCycle()
+    orbitPulseActive = false
+    orbitPulseElapsed = orbitPulseDuration
+    orbitPulseCompleted = true
+    orbitPulseCycleCount = orbitPulseCycleCount + 1
+end
+
+local function ToggleOrbitReverseBlend()
+    local skyMaterial = GetActiveSkyMaterial()
+    if skyMaterial == nil then
+        return
+    end
+
+    local currentValue = skyMaterial:GetFloat("_ReverseBlend")
+    local nextValue = currentValue > 0.5 and 0 or 1
+    skyMaterial:SetFloat("_ReverseBlend", nextValue)
+end
+
+local function UpdateOrbitPulseEffects(spin, deltaTime)
+    if spin == nil or spin.totalDuration <= 0 then
+        ResetOrbitPulseEffects()
+        return
+    end
+
+    if orbitPulseCompleted then
+        return
+    end
+
+    if not orbitPulseActive then
+        StartOrbitPulseCycle(spin)
+    end
+
+    orbitPulseElapsed = orbitPulseElapsed + deltaTime
+    local progress = math.min(orbitPulseElapsed / orbitPulseDuration, 1)
+
+    local skyMaterial = GetActiveSkyMaterial()
+    if skyMaterial ~= nil then
+        local reverseBlend = orbitPulseTargetReverseBlend
+        if reverseBlend == nil then
+            reverseBlend = skyMaterial:GetFloat("_ReverseBlend")
+            orbitPulseTargetReverseBlend = reverseBlend
+        end
+        ApplySkyPulseStateToKnownMaterials(reverseBlend, progress)
+    end
+
+    if progress >= 1 then
+        CompleteOrbitPulseCycle()
+    end
+end
+
 local function UpdateCenterSpin(spin, deltaTime)
     if spin == nil then
         return true
@@ -665,6 +927,13 @@ local function SetupControllers()
 end
 
 local function ResetAllToBase()
+    pendingEnvironmentIndex = nil
+    pendingEnvironmentTimer = 0
+    pendingSourceEnvironmentIndex = nil
+    pendingSourceMaterial = nil
+    orbitPulseCompleted = false
+    orbitPulseCycleCount = 0
+
     for i = 1, #pendulums do
         ResetPendulum(pendulums[i])
     end
@@ -680,6 +949,7 @@ local function ResetAllToBase()
     for i = 1, #gears do
         ResetGear(gears[i])
     end
+    ResetOrbitPulseEffects()
 end
 
 local function StartPendulumState()
@@ -719,6 +989,8 @@ function Update()
     end
 
     local deltaTime = CS.UnityEngine.Time.deltaTime
+    UpdatePendingEnvironmentTransition(deltaTime)
+
     local gearSpeedFactor = Clamp01(GearMinSpeedFactor, 0.1)
     if currentState == STATE_CENTER_SPIN and #centerSpins > 0 then
         gearSpeedFactor = GetCenterSpinSpeedFactor(centerSpins[1], centerSpins[1].elapsed)
@@ -784,6 +1056,7 @@ function Update()
             for i = 1, #centerSpins do
                 PrepareCenterSpin(centerSpins[i])
             end
+            ResetOrbitPulseCycleState()
             EnterWaitState(DelayAfterBallRotate, STATE_CENTER_SPIN)
         end
         return
@@ -795,6 +1068,9 @@ function Update()
             if not UpdateCenterSpin(centerSpins[i], deltaTime) then
                 allCompleted = false
             end
+        end
+        if not allCompleted then
+            UpdateOrbitPulseEffects(centerSpins[1], deltaTime)
         end
 
         if allCompleted then
