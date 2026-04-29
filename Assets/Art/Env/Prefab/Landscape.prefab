@@ -1,5 +1,273 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1039793323156075401
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2854583795899385568}
+  - component: {fileID: 6640883929591017321}
+  - component: {fileID: 890185759338328852}
+  m_Layer: 0
+  m_Name: MoveGroup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2854583795899385568
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039793323156075401}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2131675023168108543}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6640883929591017321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039793323156075401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 540439951, guid: 3ead8c7f8efe8473b8d110669e8128d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NetGUID:
+    n1: 6133951803281686765
+    n2: 17460025219467993602
+  RunContext: 0
+--- !u!114 &890185759338328852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039793323156075401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -413692930, guid: c1a957cff7a534cbab677bbff81abab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptAsset: {fileID: -4320198879241519195, guid: 6d519829a1ac1f742996c866625bb34b, type: 3}
+  ParaLuaBindingData:
+  - rid: 5760247531563647061
+  - rid: 5760247531563647062
+  IsServerScript: 0
+  IsManualedVar: 1
+  eNetState: 0
+  autoUpdate: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 5760247531563647061
+      type: {class: DouyinLuaDataGameObjectArr, ns: , asm: com.douyin.script}
+      data:
+        varName: UnitObjects
+        Data:
+        - {fileID: 2759902106664251020}
+        - {fileID: 5242235391454719162}
+        varType: UnityEngine.GameObject[]
+    - rid: 5760247531563647062
+      type: {class: DouyinLuaDataString, ns: , asm: com.douyin.script}
+      data:
+        varName: UnitScriptName
+        Data: DouyinSequenceMoveUnit
+--- !u!1 &1296124171399925204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2034636686946278880}
+  - component: {fileID: 2492258713072465682}
+  - component: {fileID: 7552115598055194188}
+  m_Layer: 0
+  m_Name: OrbitGroup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2034636686946278880
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296124171399925204}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2131675023168108543}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2492258713072465682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296124171399925204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 540439951, guid: 3ead8c7f8efe8473b8d110669e8128d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NetGUID:
+    n1: 10866465951970073574
+    n2: 13750437587943265641
+  RunContext: 0
+--- !u!114 &7552115598055194188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296124171399925204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -413692930, guid: c1a957cff7a534cbab677bbff81abab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptAsset: {fileID: -4320198879241519195, guid: 865e2e016cb854649a51b68ec177f49b, type: 3}
+  ParaLuaBindingData:
+  - rid: 5760247531563647065
+  - rid: 5760247531563647066
+  - rid: 5760247531563647067
+  IsServerScript: 0
+  IsManualedVar: 1
+  eNetState: 0
+  autoUpdate: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 5760247531563647065
+      type: {class: DouyinLuaDataGameObjectArr, ns: , asm: com.douyin.script}
+      data:
+        varName: UnitObjects
+        Data:
+        - {fileID: 6310890299962937319}
+        - {fileID: 6310890301330538586}
+        - {fileID: 4114535571340345964}
+        varType: UnityEngine.GameObject[]
+    - rid: 5760247531563647066
+      type: {class: DouyinLuaDataString, ns: , asm: com.douyin.script}
+      data:
+        varName: UnitScriptName
+        Data: DouyinSequenceOrbitUnit
+    - rid: 5760247531563647067
+      type: {class: DouyinLuaDataVarInt, ns: , asm: com.douyin.script}
+      data:
+        varName: PrimaryUnitIndex
+        Data: 1
+--- !u!1 &1919854140268950584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1538330756391451636}
+  - component: {fileID: 9120360887138920972}
+  - component: {fileID: 6696128598904690486}
+  m_Layer: 0
+  m_Name: PendulumGroup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1538330756391451636
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919854140268950584}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2131675023168108543}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9120360887138920972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919854140268950584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 540439951, guid: 3ead8c7f8efe8473b8d110669e8128d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NetGUID:
+    n1: 8125003518487813946
+    n2: 1037871727130152190
+  RunContext: 0
+--- !u!114 &6696128598904690486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919854140268950584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -413692930, guid: c1a957cff7a534cbab677bbff81abab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptAsset: {fileID: -4320198879241519195, guid: 60ef288413e28b846bc7b2c994bf86cf, type: 3}
+  ParaLuaBindingData:
+  - rid: 5760247531563647044
+  - rid: 5760247531563647045
+  - rid: 5760247531563647046
+  IsServerScript: 0
+  IsManualedVar: 1
+  eNetState: 0
+  autoUpdate: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 5760247531563647044
+      type: {class: DouyinLuaDataGameObjectArr, ns: , asm: com.douyin.script}
+      data:
+        varName: UnitObjects
+        Data:
+        - {fileID: 3532751562241224050}
+        - {fileID: 6884833759039369028}
+        varType: UnityEngine.GameObject[]
+    - rid: 5760247531563647045
+      type: {class: DouyinLuaDataString, ns: , asm: com.douyin.script}
+      data:
+        varName: UnitScriptName
+        Data: DouyinSequencePendulumUnit
+    - rid: 5760247531563647046
+      type: {class: DouyinLuaDataVarInt, ns: , asm: com.douyin.script}
+      data:
+        varName: SwingCount
+        Data: 17
 --- !u!1 &2131675022972142438
 GameObject:
   m_ObjectHideFlags: 0
@@ -29,10 +297,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1882366513791640950}
-  - {fileID: 1882366513094512560}
-  - {fileID: 537007502824118653}
-  - {fileID: 7855313523754562306}
-  - {fileID: 3803588679192732631}
+  - {fileID: 6261646294462804526}
   m_Father: {fileID: 2131675023168108543}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -70,6 +335,12 @@ Transform:
   - {fileID: 1882366511859971866}
   - {fileID: 1882366513772312743}
   - {fileID: 8399933869365508753}
+  - {fileID: 3571337627788827308}
+  - {fileID: 1538330756391451636}
+  - {fileID: 2854583795899385568}
+  - {fileID: 6754725701096549248}
+  - {fileID: 2034636686946278880}
+  - {fileID: 5584915287323021923}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -103,105 +374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScriptAsset: {fileID: -4320198879241519195, guid: 1c3b45195703d3745958dac51c25b187, type: 3}
   ParaLuaBindingData:
-  - rid: 5760247124674215936
-  - rid: 5760247124674215937
-  - rid: 5760247124674215938
-  - rid: 5760247124674215939
-  - rid: 5760247124674215940
-  - rid: 5760247124674215941
-  - rid: 5760247124674215942
-  - rid: 5760247124674215943
-  - rid: 5760247124674215944
-  - rid: 5760247124674215945
-  - rid: 5760247124674215946
-  - rid: 5760247124674215947
-  - rid: 5760247124674215948
-  - rid: 5760247124674215949
-  - rid: 5760247124674215950
-  - rid: 5760247124674215951
-  - rid: 5760247124674215952
-  - rid: 5760247124674215953
-  - rid: 5760247124674215954
-  - rid: 5760247124674215955
-  - rid: 5760247124674215956
-  - rid: 5760247124674215957
-  - rid: 5760247124674215958
-  - rid: 5760247124674215959
-  - rid: 5760247124674215960
-  - rid: 5760247124674215961
-  - rid: 5760247124674215962
-  - rid: 5760247124674215963
-  - rid: 5760247124674215964
-  - rid: 5760247124674215965
-  - rid: 5760247124674215966
-  - rid: 5760247124674215967
-  - rid: 5760247124674215968
-  - rid: 5760247124674215969
-  - rid: 5760247124674215970
-  - rid: 5760247124674215971
-  - rid: 5760247124674215980
-  - rid: 5760247124674215981
-  - rid: 5760247124674215982
-  - rid: 5760247124674215995
-  - rid: 5760247124674215996
-  - rid: 5760247124674215997
-  - rid: 5760247124674215998
-  - rid: 5760247124674215973
-  - rid: 5760247124674215974
-  - rid: 5760247124674215975
-  - rid: 5760247124674215976
-  - rid: 5760247124674215977
-  - rid: 5760247141416304640
-  - rid: 5760247141416304641
-  - rid: 5760247124674216005
-  - rid: 5760247124674216006
-  - rid: 5760247124674216007
-  - rid: 5760247124674216008
-  - rid: 5760247124674216009
-  - rid: 5760247124674216010
-  - rid: 5760247124674216011
-  - rid: 5760247124674216012
-  - rid: 5760247124674216013
-  - rid: 5760247124674216014
-  - rid: 5760247124674216015
-  - rid: 5760247124674216016
-  - rid: 5760247124674216017
-  - rid: 5760247124674216018
-  - rid: 5760247124674216019
-  - rid: 5760247124674216020
-  - rid: 5760247124674216021
-  - rid: 5760247124674216022
-  - rid: 5760247124674216023
-  - rid: 5760247124674216024
-  - rid: 5760247124674216025
-  - rid: 5760247124674216026
-  - rid: 5760247124674216027
-  - rid: 5760247124674216028
-  - rid: 5760247124674216029
-  - rid: 5760247124674216030
-  - rid: 5760247124674216031
-  - rid: 5760247124674216032
-  - rid: 5760247124674216033
-  - rid: 5760247124674216034
-  - rid: 5760247124674216035
-  - rid: 5760247124674216036
-  - rid: 5760247124674216037
-  - rid: 5760247124674216038
-  - rid: 5760247124674216039
-  - rid: 5760247124674216040
-  - rid: 5760247124674216041
-  - rid: 5760247124674216042
-  - rid: 5760247124674216043
-  - rid: 5760247124674216044
-  - rid: 5760247124674216045
-  - rid: 5760247124674216046
-  - rid: 5760247124674216047
-  - rid: 5760247124674216048
-  - rid: 5760247124674216049
-  - rid: 5760247124674216050
-  - rid: 5760247124674216051
-  - rid: 5760247124674216052
-  - rid: 5760247124674216053
+  - rid: 5760247531563646978
   - rid: 5760247124674215999
   - rid: 5760247124674216000
   - rid: 5760247124674216001
@@ -210,6 +383,7 @@ MonoBehaviour:
   - rid: 5760247124674216004
   - rid: 5760247124674215978
   - rid: 5760247124674215979
+  - rid: 5760247531563646979
   IsServerScript: 0
   IsManualedVar: 1
   eNetState: 0
@@ -217,218 +391,6 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 5760247124674215936
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: PendulumA
-        Data: {fileID: 4334493613981413091}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674215937
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: PendulumB
-        Data: {fileID: 5956639417190788309}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674215938
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: PendulumAxisA
-        Data: {x: 1, y: 0, z: 0}
-    - rid: 5760247124674215939
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: PendulumAxisB
-        Data: {x: 1, y: 0, z: 0}
-    - rid: 5760247124674215940
-      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
-      data:
-        varName: PendulumUseLocalA
-        Data: 1
-    - rid: 5760247124674215941
-      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
-      data:
-        varName: PendulumUseLocalB
-        Data: 1
-    - rid: 5760247124674215942
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: PendulumMaxAngleA
-        Data: 60
-    - rid: 5760247124674215943
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: PendulumMaxAngleB
-        Data: 60
-    - rid: 5760247124674215944
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: PendulumSpeedA
-        Data: 2
-    - rid: 5760247124674215945
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: PendulumSpeedB
-        Data: 2
-    - rid: 5760247124674215946
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: PendulumStartPhaseA
-        Data: 0
-    - rid: 5760247124674215947
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: PendulumStartPhaseB
-        Data: 0
-    - rid: 5760247124674215948
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: PendulumStopAngleA
-        Data: 0
-    - rid: 5760247124674215949
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: PendulumStopAngleB
-        Data: 0
-    - rid: 5760247124674215950
-      type: {class: DouyinLuaDataVarInt, ns: , asm: com.douyin.script}
-      data:
-        varName: PendulumSwingCount
-        Data: 1
-    - rid: 5760247124674215951
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: ExtenderA
-        Data: {fileID: 7541381015055113074}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674215952
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: ExtenderB
-        Data: {fileID: 442851485006207300}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674215953
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: ExtendAxisA
-        Data: {x: -1, y: 0, z: 0}
-    - rid: 5760247124674215954
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: ExtendAxisB
-        Data: {x: -1, y: 0, z: 0}
-    - rid: 5760247124674215955
-      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
-      data:
-        varName: ExtendUseLocalA
-        Data: 1
-    - rid: 5760247124674215956
-      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
-      data:
-        varName: ExtendUseLocalB
-        Data: 1
-    - rid: 5760247124674215957
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: ExtendDistanceA
-        Data: 0.2
-    - rid: 5760247124674215958
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: ExtendDistanceB
-        Data: 0.2
-    - rid: 5760247124674215959
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: ExtendSpeedA
-        Data: 0.05
-    - rid: 5760247124674215960
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: ExtendSpeedB
-        Data: 0.05
-    - rid: 5760247124674215961
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: BallA
-        Data: {fileID: 379276287485927684}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674215962
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: BallB
-        Data: {fileID: 7768279180426568498}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674215963
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: BallAxisA
-        Data: {x: 0, y: 0, z: 1}
-    - rid: 5760247124674215964
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: BallAxisB
-        Data: {x: 0, y: 0, z: 1}
-    - rid: 5760247124674215965
-      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
-      data:
-        varName: BallUseLocalA
-        Data: 1
-    - rid: 5760247124674215966
-      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
-      data:
-        varName: BallUseLocalB
-        Data: 1
-    - rid: 5760247124674215967
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: BallRotateAngleA
-        Data: 90
-    - rid: 5760247124674215968
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: BallRotateAngleB
-        Data: 90
-    - rid: 5760247124674215969
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: BallRotateSpeedA
-        Data: 10
-    - rid: 5760247124674215970
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: BallRotateSpeedB
-        Data: 10
-    - rid: 5760247124674215971
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: CenterTransform
-        Data: {fileID: 3389919790101554990}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674215973
-      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
-      data:
-        varName: CenterUseLocalSpace
-        Data: 0
-    - rid: 5760247124674215974
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: CenterSpinLoops
-        Data: 50
-    - rid: 5760247124674215975
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: CenterAccelDuration
-        Data: 10
-    - rid: 5760247124674215976
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: CenterCruiseDuration
-        Data: 10
-    - rid: 5760247124674215977
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: CenterDecelDuration
-        Data: 10
     - rid: 5760247124674215978
       type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
       data:
@@ -439,48 +401,6 @@ MonoBehaviour:
       data:
         varName: LoopSequence
         Data: 1
-    - rid: 5760247124674215980
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: CenterTransformB
-        Data: {fileID: 622185466498129719}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674215981
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: CenterTransformC
-        Data: {fileID: 9002345288942864797}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674215982
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: CenterTransformD
-        Data: {fileID: 1325127426168671147}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674215995
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: CenterOrbitPoint
-        Data: {fileID: 622185466498129719}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674215996
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: CenterOrbitPointB
-        Data: {fileID: 622185466498129719}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674215997
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: CenterOrbitPointC
-        Data: {fileID: 622185466498129719}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674215998
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: CenterOrbitPointD
-        Data: {fileID: 622185466498129719}
-        varType: UnityEngine.Transform
     - rid: 5760247124674215999
       type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
       data:
@@ -511,289 +431,435 @@ MonoBehaviour:
       data:
         varName: DelayAfterRetract
         Data: 1
-    - rid: 5760247124674216005
+    - rid: 5760247531563646978
+      type: {class: DouyinLuaDataMono, ns: , asm: com.douyin.script}
+      data:
+        varName: Registry
+        Data: {fileID: 6526686180835134063}
+        varType: DouyinScript
+    - rid: 5760247531563646979
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: EnableDebugLog
+        Data: 0
+--- !u!1 &2721960942953785523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5584915287323021923}
+  - component: {fileID: 3222317228462516915}
+  - component: {fileID: 4095998381084282219}
+  m_Layer: 0
+  m_Name: FxBridge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5584915287323021923
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2721960942953785523}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2131675023168108543}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3222317228462516915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2721960942953785523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 540439951, guid: 3ead8c7f8efe8473b8d110669e8128d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NetGUID:
+    n1: 14528843772971573630
+    n2: 17943793088927888325
+  RunContext: 0
+--- !u!114 &4095998381084282219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2721960942953785523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -413692930, guid: c1a957cff7a534cbab677bbff81abab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptAsset: {fileID: -4320198879241519195, guid: 7bb318669e14bd640977756ccf2bde58, type: 3}
+  ParaLuaBindingData:
+  - rid: 5760247531563647082
+  - rid: 5760247531563647083
+  - rid: 5760247531563647084
+  - rid: 5760247531563647085
+  IsServerScript: 0
+  IsManualedVar: 1
+  eNetState: 0
+  autoUpdate: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 5760247531563647082
       type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
       data:
-        varName: GearTransform1
-        Data: {fileID: 3389919791283576708}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674216006
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: GearTransform2
-        Data: {fileID: 622185467950917533}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674216007
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: GearTransform3
-        Data: {fileID: 7867857406557193078}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674216008
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: GearTransform4
-        Data: {fileID: 328295194478883050}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674216009
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: GearTransform5
-        Data: {fileID: 3631938912158337353}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674216010
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: GearTransform6
-        Data: {fileID: 1571234305395667280}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674216011
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: GearTransform7
-        Data: {fileID: 8096462247722702267}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674216012
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: GearTransform8
-        Data: {fileID: 1865054952896488999}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674216013
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: GearTransform9
-        Data: {fileID: 6347619508947428150}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674216014
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: GearTransform10
-        Data: {fileID: 9204898300069632815}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674216015
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: GearTransform11
-        Data: {fileID: 1885903205253267396}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674216016
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: GearTransform12
-        Data: {fileID: 8327853782524300376}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674216017
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: GearTransform13
-        Data: {fileID: 134518137212777443}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674216018
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: GearTransform14
-        Data: {fileID: 2771121130439953402}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674216019
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: GearTransform15
-        Data: {fileID: 4892795126967480081}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674216020
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: GearTransform16
-        Data: {fileID: 3051429695083879565}
-        varType: UnityEngine.Transform
-    - rid: 5760247124674216021
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: GearAxis1
-        Data: {x: 0, y: 0, z: 1}
-    - rid: 5760247124674216022
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: GearAxis2
-        Data: {x: 0, y: 0, z: 1}
-    - rid: 5760247124674216023
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: GearAxis3
-        Data: {x: 0, y: 0, z: 1}
-    - rid: 5760247124674216024
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: GearAxis4
-        Data: {x: 0, y: 0, z: 1}
-    - rid: 5760247124674216025
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: GearAxis5
-        Data: {x: 0, y: 0, z: 1}
-    - rid: 5760247124674216026
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: GearAxis6
-        Data: {x: 0, y: 0, z: 1}
-    - rid: 5760247124674216027
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: GearAxis7
-        Data: {x: 0, y: 0, z: 1}
-    - rid: 5760247124674216028
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: GearAxis8
-        Data: {x: 0, y: 0, z: 1}
-    - rid: 5760247124674216029
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: GearAxis9
-        Data: {x: 0, y: 0, z: 1}
-    - rid: 5760247124674216030
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: GearAxis10
-        Data: {x: 0, y: 0, z: 1}
-    - rid: 5760247124674216031
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: GearAxis11
-        Data: {x: 0, y: 0, z: 1}
-    - rid: 5760247124674216032
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: GearAxis12
-        Data: {x: 0, y: 0, z: 1}
-    - rid: 5760247124674216033
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: GearAxis13
-        Data: {x: 0, y: 0, z: 1}
-    - rid: 5760247124674216034
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: GearAxis14
-        Data: {x: 0, y: 0, z: 1}
-    - rid: 5760247124674216035
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: GearAxis15
-        Data: {x: 0, y: 0, z: 1}
-    - rid: 5760247124674216036
-      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
-      data:
-        varName: GearAxis16
-        Data: {x: 0, y: 0, z: 1}
-    - rid: 5760247124674216037
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: GearSpeed1
-        Data: 500
-    - rid: 5760247124674216038
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: GearSpeed2
-        Data: -500
-    - rid: 5760247124674216039
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: GearSpeed3
-        Data: 500
-    - rid: 5760247124674216040
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: GearSpeed4
-        Data: -500
-    - rid: 5760247124674216041
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: GearSpeed5
-        Data: 500
-    - rid: 5760247124674216042
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: GearSpeed6
-        Data: -500
-    - rid: 5760247124674216043
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: GearSpeed7
-        Data: 500
-    - rid: 5760247124674216044
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: GearSpeed8
-        Data: -500
-    - rid: 5760247124674216045
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: GearSpeed9
-        Data: 500
-    - rid: 5760247124674216046
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: GearSpeed10
-        Data: -500
-    - rid: 5760247124674216047
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: GearSpeed11
-        Data: 500
-    - rid: 5760247124674216048
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: GearSpeed12
-        Data: -500
-    - rid: 5760247124674216049
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: GearSpeed13
-        Data: 500
-    - rid: 5760247124674216050
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: GearSpeed14
-        Data: -500
-    - rid: 5760247124674216051
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: GearSpeed15
-        Data: 500
-    - rid: 5760247124674216052
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: GearSpeed16
-        Data: -500
-    - rid: 5760247124674216053
-      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
-      data:
-        varName: GearMinSpeedFactor
-        Data: 0.1
-    - rid: 5760247141416304640
-      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
-      data:
-        varName: OrbitPulseMaterial
-        Data: {fileID: 2100000, guid: ccac23c7283771842a182e42750c4c86, type: 2}
-        varType: UnityEngine.Material
-    - rid: 5760247141416304641
+        varName: SceneEnvironment
+        Data: {fileID: 0}
+        varType: DouyinSceneEnvironment
+    - rid: 5760247531563647083
       type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
       data:
         varName: OrbitPulseParticle
         Data: {fileID: 0}
         varType: UnityEngine.ParticleSystem
+    - rid: 5760247531563647084
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: EnableEnvironmentSwitch
+        Data: 0
+    - rid: 5760247531563647085
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: EnableDebugLog
+        Data: 1
+--- !u!1 &3482421203331700790
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6261646294462804526}
+  - component: {fileID: 206133676247217044}
+  - component: {fileID: 42585007849933692}
+  m_Layer: 0
+  m_Name: GearGroups
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6261646294462804526
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3482421203331700790}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1882366513094512560}
+  - {fileID: 537007502824118653}
+  - {fileID: 7855313523754562306}
+  - {fileID: 3803588679192732631}
+  m_Father: {fileID: 2131675022972142439}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &206133676247217044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3482421203331700790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 540439951, guid: 3ead8c7f8efe8473b8d110669e8128d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NetGUID:
+    n1: 3160881958101258003
+    n2: 1467355409309716616
+  RunContext: 0
+--- !u!114 &42585007849933692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3482421203331700790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -413692930, guid: c1a957cff7a534cbab677bbff81abab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptAsset: {fileID: -4320198879241519195, guid: 697dfec230468214abb014b185ae1a98, type: 3}
+  ParaLuaBindingData:
+  - rid: 5760247531563647042
+  - rid: 5760247531563647043
+  - rid: 5760247531563647009
+  IsServerScript: 0
+  IsManualedVar: 1
+  eNetState: 0
+  autoUpdate: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 5760247531563647009
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: MinSpeedFactor
+        Data: 0.1
+    - rid: 5760247531563647042
+      type: {class: DouyinLuaDataGameObjectArr, ns: , asm: com.douyin.script}
+      data:
+        varName: UnitObjects
+        Data:
+        - {fileID: 8909892837995655363}
+        - {fileID: 3658137052906682983}
+        - {fileID: 3866568429020962035}
+        - {fileID: 1395484377222545946}
+        - {fileID: 7406762705184155150}
+        - {fileID: 3434002828185152682}
+        - {fileID: 2937640688672770622}
+        - {fileID: 1022764073607943383}
+        - {fileID: 917151084603477105}
+        - {fileID: 5032909050175735509}
+        - {fileID: 4806717223712874561}
+        - {fileID: 7224316947110149800}
+        - {fileID: 6156633767490034852}
+        - {fileID: 2022923111331943936}
+        - {fileID: 1981093584977588372}
+        - {fileID: 4434722075589553789}
+        varType: UnityEngine.GameObject[]
+    - rid: 5760247531563647043
+      type: {class: DouyinLuaDataString, ns: , asm: com.douyin.script}
+      data:
+        varName: UnitScriptName
+        Data: DouyinSequenceGearUnit
+--- !u!1 &5335778033288248301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3571337627788827308}
+  - component: {fileID: 5656831553055121831}
+  - component: {fileID: 6526686180835134063}
+  m_Layer: 0
+  m_Name: SequenceRegistry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3571337627788827308
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5335778033288248301}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2131675023168108543}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5656831553055121831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5335778033288248301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 540439951, guid: 3ead8c7f8efe8473b8d110669e8128d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NetGUID:
+    n1: 6142077581252335522
+    n2: 5231793005698012553
+  RunContext: 0
+--- !u!114 &6526686180835134063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5335778033288248301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -413692930, guid: c1a957cff7a534cbab677bbff81abab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptAsset: {fileID: -4320198879241519195, guid: 5a62f3ab2b1f17e468c76573e5502da1, type: 3}
+  ParaLuaBindingData:
+  - rid: 5760247531563646987
+  - rid: 5760247531563646988
+  - rid: 5760247531563646989
+  - rid: 5760247531563646990
+  - rid: 5760247531563646991
+  - rid: 5760247531563646992
+  - rid: 5760247531563646993
+  IsServerScript: 0
+  IsManualedVar: 1
+  eNetState: 0
+  autoUpdate: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 5760247531563646987
+      type: {class: DouyinLuaDataMono, ns: , asm: com.douyin.script}
+      data:
+        varName: PendulumGroup
+        Data: {fileID: 6696128598904690486}
+        varType: DouyinScript
+    - rid: 5760247531563646988
+      type: {class: DouyinLuaDataMono, ns: , asm: com.douyin.script}
+      data:
+        varName: ExtendGroup
+        Data: {fileID: 890185759338328852}
+        varType: DouyinScript
+    - rid: 5760247531563646989
+      type: {class: DouyinLuaDataMono, ns: , asm: com.douyin.script}
+      data:
+        varName: BallGroup
+        Data: {fileID: 5511547435840546493}
+        varType: DouyinScript
+    - rid: 5760247531563646990
+      type: {class: DouyinLuaDataMono, ns: , asm: com.douyin.script}
+      data:
+        varName: OrbitGroup
+        Data: {fileID: 7552115598055194188}
+        varType: DouyinScript
+    - rid: 5760247531563646991
+      type: {class: DouyinLuaDataMono, ns: , asm: com.douyin.script}
+      data:
+        varName: GearGroup
+        Data: {fileID: 42585007849933692}
+        varType: DouyinScript
+    - rid: 5760247531563646992
+      type: {class: DouyinLuaDataMono, ns: , asm: com.douyin.script}
+      data:
+        varName: FxBridge
+        Data: {fileID: 4095998381084282219}
+        varType: DouyinScript
+    - rid: 5760247531563646993
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: EnableValidationLog
+        Data: 1
+--- !u!1 &6137119815838781603
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6754725701096549248}
+  - component: {fileID: 8228460229619120687}
+  - component: {fileID: 5511547435840546493}
+  m_Layer: 0
+  m_Name: RotateGroup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6754725701096549248
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6137119815838781603}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2131675023168108543}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8228460229619120687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6137119815838781603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 540439951, guid: 3ead8c7f8efe8473b8d110669e8128d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NetGUID:
+    n1: 16437316966973327925
+    n2: 2026570929277219891
+  RunContext: 0
+--- !u!114 &5511547435840546493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6137119815838781603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -413692930, guid: c1a957cff7a534cbab677bbff81abab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptAsset: {fileID: -4320198879241519195, guid: f3ca08c6880072f4ba4e2325d661e016, type: 3}
+  ParaLuaBindingData:
+  - rid: 5760247531563647063
+  - rid: 5760247531563647064
+  IsServerScript: 0
+  IsManualedVar: 1
+  eNetState: 0
+  autoUpdate: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 5760247531563647063
+      type: {class: DouyinLuaDataGameObjectArr, ns: , asm: com.douyin.script}
+      data:
+        varName: UnitObjects
+        Data:
+        - {fileID: 6889613688227706474}
+        - {fileID: 3535851420144874588}
+        varType: UnityEngine.GameObject[]
+    - rid: 5760247531563647064
+      type: {class: DouyinLuaDataString, ns: , asm: com.douyin.script}
+      data:
+        varName: UnitScriptName
+        Data: DouyinSequenceRotateUnit
 --- !u!1001 &1150962813335975426
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2131675022972142439}
+    m_TransformParent: {fileID: 6261646294462804526}
     m_Modifications:
     - target: {fileID: 1578099122492537266, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1578099122492537266, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
       propertyPath: m_LocalPosition.x
@@ -805,7 +871,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1578099122492537266, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.47
+      value: -5.4700003
       objectReference: {fileID: 0}
     - target: {fileID: 1578099122492537266, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
       propertyPath: m_LocalRotation.w
@@ -835,6 +901,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2087303445576437825, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+      propertyPath: NetGUID.n1
+      value: 16385771738387042604
+      objectReference: {fileID: 0}
+    - target: {fileID: 2092087614690600673, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+      propertyPath: NetGUID.n1
+      value: 5108468186405597915
+      objectReference: {fileID: 0}
     - target: {fileID: 2210520191148073736, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
       propertyPath: m_Name
       value: Gears01
@@ -855,16 +929,19 @@ PrefabInstance:
       propertyPath: NetGUID.n1
       value: 17199782511649654178
       objectReference: {fileID: 0}
+    - target: {fileID: 7963262233105994688, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+      propertyPath: NetGUID.n1
+      value: 8000485568096374201
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671039989217776322, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+      propertyPath: NetGUID.n1
+      value: 3502874471495532212
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
---- !u!4 &328295194478883050 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 826230391415408360, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
-  m_PrefabInstance: {fileID: 1150962813335975426}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &622185467950917533 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 530150380698128799, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+--- !u!1 &1395484377222545946 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2063997942291117080, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
   m_PrefabInstance: {fileID: 1150962813335975426}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1882366513094512560 stripped
@@ -872,14 +949,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1578099122492537266, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
   m_PrefabInstance: {fileID: 1150962813335975426}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &3389919791283576708 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2374066066483915142, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+--- !u!1 &3658137052906682983 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4412783060309855333, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
   m_PrefabInstance: {fileID: 1150962813335975426}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &7867857406557193078 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7118278086190675316, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+--- !u!1 &3866568429020962035 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4202356619840580337, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+  m_PrefabInstance: {fileID: 1150962813335975426}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8909892837995655363 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8385498825880766145, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
   m_PrefabInstance: {fileID: 1150962813335975426}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1339079478852772047
@@ -887,15 +969,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2131675022972142439}
+    m_TransformParent: {fileID: 6261646294462804526}
     m_Modifications:
     - target: {fileID: 1578099122492537266, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1578099122492537266, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.4800005
+      value: -5.480001
       objectReference: {fileID: 0}
     - target: {fileID: 1578099122492537266, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
       propertyPath: m_LocalPosition.y
@@ -933,6 +1015,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2087303445576437825, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+      propertyPath: NetGUID.n1
+      value: 4612381556584750757
+      objectReference: {fileID: 0}
+    - target: {fileID: 2092087614690600673, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+      propertyPath: NetGUID.n1
+      value: 14954292122364303093
+      objectReference: {fileID: 0}
     - target: {fileID: 2210520191148073736, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
       propertyPath: m_Name
       value: Gears02
@@ -953,6 +1043,14 @@ PrefabInstance:
       propertyPath: NetGUID.n1
       value: 7050167217232623422
       objectReference: {fileID: 0}
+    - target: {fileID: 7963262233105994688, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+      propertyPath: NetGUID.n1
+      value: 18322797230997486593
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671039989217776322, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+      propertyPath: NetGUID.n1
+      value: 2810127677126814185
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
 --- !u!4 &537007502824118653 stripped
@@ -960,24 +1058,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1578099122492537266, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
   m_PrefabInstance: {fileID: 1339079478852772047}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1571234305395667280 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 530150380698128799, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+--- !u!1 &1022764073607943383 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2063997942291117080, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
   m_PrefabInstance: {fileID: 1339079478852772047}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1865054952896488999 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 826230391415408360, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+--- !u!1 &2937640688672770622 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4202356619840580337, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
   m_PrefabInstance: {fileID: 1339079478852772047}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &3631938912158337353 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2374066066483915142, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+--- !u!1 &3434002828185152682 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4412783060309855333, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
   m_PrefabInstance: {fileID: 1339079478852772047}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &8096462247722702267 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7118278086190675316, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+--- !u!1 &7406762705184155150 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8385498825880766145, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
   m_PrefabInstance: {fileID: 1339079478852772047}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2131675022305608349
@@ -1123,11 +1221,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: cd43986c4d1d54c4a82149742d13c7f6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
---- !u!4 &622185466498129719 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1528771143399657414, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
-  m_PrefabInstance: {fileID: 2131675024203731185}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1882366511859971866 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
@@ -1138,16 +1231,106 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -5575929999083587617, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
   m_PrefabInstance: {fileID: 2131675024203731185}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6310890299962937319 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5332809968238436118, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
+  m_PrefabInstance: {fileID: 2131675024203731185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5486826510877671114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6310890299962937319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 540439951, guid: 3ead8c7f8efe8473b8d110669e8128d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NetGUID:
+    n1: 9471812340946422855
+    n2: 2237598699076343841
+  RunContext: 0
+--- !u!114 &9096741366626726400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6310890299962937319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -413692930, guid: c1a957cff7a534cbab677bbff81abab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptAsset: {fileID: -4320198879241519195, guid: 6d106510d475b074eb9d3a58211f342e, type: 3}
+  ParaLuaBindingData:
+  - rid: 5760247531563647075
+  - rid: 5760247531563647076
+  - rid: 5760247531563647077
+  - rid: 5760247531563647078
+  - rid: 5760247531563647079
+  - rid: 5760247531563647080
+  - rid: 5760247531563647081
+  IsServerScript: 0
+  IsManualedVar: 1
+  eNetState: 0
+  autoUpdate: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 5760247531563647075
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: OrbitCenter
+        Data: {fileID: 9002345290843670048}
+        varType: UnityEngine.Transform
+    - rid: 5760247531563647076
+      type: {class: DouyinLuaDataVec3, ns: , asm: com.douyin.script}
+      data:
+        varName: OrbitAxis
+        Data: {x: 0, y: 1, z: 0}
+    - rid: 5760247531563647077
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: OrbitLoops
+        Data: 50
+    - rid: 5760247531563647078
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: AccelDuration
+        Data: 10
+    - rid: 5760247531563647079
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: CruiseDuration
+        Data: 10
+    - rid: 5760247531563647080
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: DecelDuration
+        Data: 10
+    - rid: 5760247531563647081
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: KeepOriginalRotation
+        Data: 0
+--- !u!4 &9002345290843670048 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -2198888584636164399, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
+  m_PrefabInstance: {fileID: 2131675024203731185}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2391278404956527205
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2131675022972142439}
+    m_TransformParent: {fileID: 6261646294462804526}
     m_Modifications:
     - target: {fileID: 1578099122492537266, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1578099122492537266, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1189,6 +1372,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2087303445576437825, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+      propertyPath: NetGUID.n1
+      value: 9693527283271168
+      objectReference: {fileID: 0}
+    - target: {fileID: 2092087614690600673, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+      propertyPath: NetGUID.n1
+      value: 15438248734743978279
+      objectReference: {fileID: 0}
     - target: {fileID: 2210520191148073736, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
       propertyPath: m_Name
       value: Gears04
@@ -1209,21 +1400,24 @@ PrefabInstance:
       propertyPath: NetGUID.n1
       value: 7226906228161620426
       objectReference: {fileID: 0}
+    - target: {fileID: 7963262233105994688, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+      propertyPath: NetGUID.n1
+      value: 937963531174277410
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671039989217776322, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+      propertyPath: NetGUID.n1
+      value: 10816991807440838327
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
---- !u!4 &134518137212777443 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2374066066483915142, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+--- !u!1 &1981093584977588372 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4202356619840580337, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
   m_PrefabInstance: {fileID: 2391278404956527205}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &2771121130439953402 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 530150380698128799, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
-  m_PrefabInstance: {fileID: 2391278404956527205}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &3051429695083879565 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 826230391415408360, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+--- !u!1 &2022923111331943936 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4412783060309855333, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
   m_PrefabInstance: {fileID: 2391278404956527205}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &3803588679192732631 stripped
@@ -1231,9 +1425,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1578099122492537266, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
   m_PrefabInstance: {fileID: 2391278404956527205}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &4892795126967480081 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7118278086190675316, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+--- !u!1 &4434722075589553789 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2063997942291117080, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+  m_PrefabInstance: {fileID: 2391278404956527205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6156633767490034852 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8385498825880766145, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
   m_PrefabInstance: {fileID: 2391278404956527205}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2709260999696438685
@@ -1246,6 +1445,14 @@ PrefabInstance:
     - target: {fileID: 885160899639619119, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
       propertyPath: NetGUID.n1
       value: 762866283876171495
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589962847919257757, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: NetGUID.n1
+      value: 12886960523033198208
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454889424514485391, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: NetGUID.n1
+      value: 187231162449106416
       objectReference: {fileID: 0}
     - target: {fileID: 5772836304272722782, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
       propertyPath: NetGUID.n1
@@ -1299,6 +1506,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wing02
       objectReference: {fileID: 0}
+    - target: {fileID: 7472651531408203504, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: managedReferences[5760247531563647068].Data
+      value: 
+      objectReference: {fileID: 9002345290843670048}
     - target: {fileID: 8241933111644116886, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
       propertyPath: NetGUID.n1
       value: 12886960523033198208
@@ -1313,24 +1524,24 @@ PrefabInstance:
       objectReference: {fileID: 3389919790101554990}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
---- !u!4 &442851485006207300 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2575049163518856409, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+--- !u!1 &3535851420144874588 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1479683872344138177, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
   m_PrefabInstance: {fileID: 2709260999696438685}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1325127426168671147 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4033807832096742966, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+--- !u!1 &4114535571340345964 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2053921578110588913, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
   m_PrefabInstance: {fileID: 2709260999696438685}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &5956639417190788309 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8589210545977489736, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+--- !u!1 &5242235391454719162 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7879350832940611879, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
   m_PrefabInstance: {fileID: 2709260999696438685}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &7768279180426568498 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5645053534062425775, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+--- !u!1 &6884833759039369028 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8796353975622400729, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
   m_PrefabInstance: {fileID: 2709260999696438685}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &8399933869365508753 stripped
@@ -1348,6 +1559,14 @@ PrefabInstance:
     - target: {fileID: 885160899639619119, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
       propertyPath: NetGUID.n1
       value: 14673726101696176088
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589962847919257757, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: NetGUID.n1
+      value: 5658517121828472650
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454889424514485391, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: NetGUID.n1
+      value: 3429884353622028922
       objectReference: {fileID: 0}
     - target: {fileID: 5772836304272722782, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
       propertyPath: NetGUID.n1
@@ -1401,6 +1620,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wing01
       objectReference: {fileID: 0}
+    - target: {fileID: 7472651531408203504, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: managedReferences[5760247531563647068].Data
+      value: 
+      objectReference: {fileID: 9002345290843670048}
     - target: {fileID: 8241933111644116886, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
       propertyPath: NetGUID.n1
       value: 5658517121828472650
@@ -1415,29 +1638,29 @@ PrefabInstance:
       objectReference: {fileID: 3389919790101554990}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
---- !u!4 &379276287485927684 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5645053534062425775, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
-  m_PrefabInstance: {fileID: 5410010083470432171}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1882366513772312743 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5839961311583432460, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
   m_PrefabInstance: {fileID: 5410010083470432171}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &4334493613981413091 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8589210545977489736, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+--- !u!1 &2759902106664251020 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7879350832940611879, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
   m_PrefabInstance: {fileID: 5410010083470432171}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &7541381015055113074 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2575049163518856409, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+--- !u!1 &3532751562241224050 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8796353975622400729, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
   m_PrefabInstance: {fileID: 5410010083470432171}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &9002345288942864797 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4033807832096742966, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+--- !u!1 &6310890301330538586 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2053921578110588913, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+  m_PrefabInstance: {fileID: 5410010083470432171}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6889613688227706474 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1479683872344138177, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
   m_PrefabInstance: {fileID: 5410010083470432171}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8711411718916639408
@@ -1445,11 +1668,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2131675022972142439}
+    m_TransformParent: {fileID: 6261646294462804526}
     m_Modifications:
     - target: {fileID: 1578099122492537266, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1578099122492537266, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1491,6 +1714,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2087303445576437825, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+      propertyPath: NetGUID.n1
+      value: 11042820111412678233
+      objectReference: {fileID: 0}
+    - target: {fileID: 2092087614690600673, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+      propertyPath: NetGUID.n1
+      value: 8109761073234061567
+      objectReference: {fileID: 0}
     - target: {fileID: 2210520191148073736, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
       propertyPath: m_Name
       value: Gears03
@@ -1511,30 +1742,38 @@ PrefabInstance:
       propertyPath: NetGUID.n1
       value: 68211742169487045
       objectReference: {fileID: 0}
+    - target: {fileID: 7963262233105994688, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+      propertyPath: NetGUID.n1
+      value: 9357271409134085112
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671039989217776322, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+      propertyPath: NetGUID.n1
+      value: 2565936933857652962
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
---- !u!4 &1885903205253267396 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7118278086190675316, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+--- !u!1 &917151084603477105 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8385498825880766145, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
   m_PrefabInstance: {fileID: 8711411718916639408}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &6347619508947428150 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2374066066483915142, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+--- !u!1 &4806717223712874561 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4202356619840580337, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+  m_PrefabInstance: {fileID: 8711411718916639408}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5032909050175735509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4412783060309855333, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
+  m_PrefabInstance: {fileID: 8711411718916639408}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7224316947110149800 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2063997942291117080, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
   m_PrefabInstance: {fileID: 8711411718916639408}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &7855313523754562306 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1578099122492537266, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
-  m_PrefabInstance: {fileID: 8711411718916639408}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &8327853782524300376 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 826230391415408360, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
-  m_PrefabInstance: {fileID: 8711411718916639408}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &9204898300069632815 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 530150380698128799, guid: 37a4246e7f097264789b5cc4eda58020, type: 3}
   m_PrefabInstance: {fileID: 8711411718916639408}
   m_PrefabAsset: {fileID: 0}
