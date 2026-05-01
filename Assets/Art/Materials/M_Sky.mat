@@ -108,7 +108,7 @@ Material:
     - _PulseEdgeWidth: 0.001
     - _PulseFill: 1
     - _PulseProgress: 0
-    - _PulseSoftness: 0.238
+    - _PulseSoftness: 0.052
     - _PulseStrength: 1
     - _PulseWidth: 0.076
     - _QueueOffset: 0

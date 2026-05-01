@@ -1036,7 +1036,7 @@ Light:
     m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 0.7
+    m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -2823,133 +2823,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1411345639109018377, guid: 055b54161b8fe394aa3c94ee3ac5bde6, type: 3}
   m_PrefabInstance: {fileID: 1722236420}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1741899730
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1741899732}
-  - component: {fileID: 1741899731}
-  m_Layer: 0
-  m_Name: LensFlare
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1741899731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1741899730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc4d76f733087744991913c9d19d5274, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_LensFlareData: {fileID: 11400000, guid: 006413b6d7135e641bb704b3ef5c30c0, type: 2}
-  intensity: 1
-  maxAttenuationDistance: 1000
-  maxAttenuationScale: 1000
-  distanceAttenuationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  scaleByDistanceCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  attenuationByLightShape: 1
-  radialScreenAttenuationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  useOcclusion: 0
-  occlusionRadius: 0.1
-  sampleCount: 32
-  occlusionOffset: 0.05
-  scale: 1
-  allowOffScreen: 0
---- !u!4 &1741899732
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1741899730}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -25.201374, y: 252.80002, z: -17.318268}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1779318853}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1761530478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3089,7 +2962,7 @@ MonoBehaviour:
     mainLightStrength: 1.2
     mainLightDir: {x: 50.000027, y: 229.51633, z: -0.000034534158}
     enableShadow: 1
-    shadowStrength: 0.7
+    shadowStrength: 1
     enableCharacterLight: 1
     characterLightColor: {r: 1, g: 1, b: 1, a: 0}
     characterStrenght: 1.6
@@ -3107,12 +2980,12 @@ MonoBehaviour:
     fogDensity: 0.01
     skyMaterial: {fileID: 2100000, guid: ccac23c7283771842a182e42750c4c86, type: 2}
     skyMaterialGUID: ccac23c7283771842a182e42750c4c86
-    flareEnable: 1
+    flareEnable: 0
     followCamera: 0
-    lenFlare: {fileID: 11400000, guid: 006413b6d7135e641bb704b3ef5c30c0, type: 2}
+    lenFlare: {fileID: 0}
     lenFlarePosition: {x: -27.59, y: 270.24384, z: -0.289999}
     lenFlareGUID: 006413b6d7135e641bb704b3ef5c30c0
-    lenFlareObj: {fileID: 1741899730}
+    lenFlareObj: {fileID: 0}
     havelenFlareObj: 1
     lenFlareIntensity: 1
     lenFlareScale: 1
@@ -3196,12 +3069,12 @@ MonoBehaviour:
     fogDensity: 0.01
     skyMaterial: {fileID: 2100000, guid: ccac23c7283771842a182e42750c4c86, type: 2}
     skyMaterialGUID: ccac23c7283771842a182e42750c4c86
-    flareEnable: 1
+    flareEnable: 0
     followCamera: 0
-    lenFlare: {fileID: 11400000, guid: 006413b6d7135e641bb704b3ef5c30c0, type: 2}
+    lenFlare: {fileID: 0}
     lenFlarePosition: {x: -27.59, y: 270.24384, z: -0.289999}
     lenFlareGUID: 006413b6d7135e641bb704b3ef5c30c0
-    lenFlareObj: {fileID: 1741899730}
+    lenFlareObj: {fileID: 0}
     havelenFlareObj: 1
     lenFlareIntensity: 1
     lenFlareScale: 1
@@ -3365,7 +3238,6 @@ Transform:
   m_Children:
   - {fileID: 793726830}
   - {fileID: 294075687}
-  - {fileID: 1741899732}
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
