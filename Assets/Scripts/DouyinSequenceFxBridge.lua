@@ -2,6 +2,17 @@
 ---@var OrbitPulseParticle     :UnityEngine.ParticleSystem
 ---@var EnableEnvironmentSwitch:bool = false
 ---@var EnableDebugLog         :bool = true
+---@var DayMainLightStrength   :float = 1
+---@var NightMainLightStrength :float = 0
+---@var DayEmissionIntensity   :float = 0
+---@var NightEmissionIntensity :float = 1
+---@var DaySkyColor            :Color
+---@var DayEquatorColor        :Color
+---@var DayGroundColor         :Color
+---@var NightSkyColor          :Color
+---@var NightEquatorColor      :Color
+---@var NightGroundColor       :Color
+---@var AmbientMaterials       :UnityEngine.Material[]
 ---@end
 
 local orbitPulseActive = false
@@ -39,6 +50,120 @@ local function ApplySkyPulse(reverseBlend, pulseProgress)
     material:SetFloat("_PulseProgress", pulseProgress)
 end
 
+local function GetSceneEnvironmentSettings()
+    if SceneEnvironment == nil then
+        return nil
+    end
+
+    local ok, settings = pcall(function()
+        return SceneEnvironment.settings
+    end)
+    if not ok then
+        Log("SceneEnvironment.settings access failed: " .. tostring(settings))
+        return nil
+    end
+    return settings
+end
+
+local function Clamp01(value)
+    if value == nil then
+        return 0
+    end
+    if value < 0 then
+        return 0
+    end
+    if value > 1 then
+        return 1
+    end
+    return value
+end
+
+local function LerpFloat(fromValue, toValue, t)
+    return fromValue + (toValue - fromValue) * t
+end
+
+local function ResolveColor(value, fallback)
+    if value ~= nil then
+        return value
+    end
+    return fallback
+end
+
+local function ToUnityColor(value)
+    if value == nil then
+        return CS.UnityEngine.Color.black
+    end
+
+    return CS.UnityEngine.Color(value.r, value.g, value.b, value.a)
+end
+
+local function LerpColor(fromValue, toValue, t)
+    return CS.UnityEngine.Color.Lerp(ToUnityColor(fromValue), ToUnityColor(toValue), t)
+end
+
+local function ApplyAmbientMaterialColors(skyColor, equatorColor, groundColor)
+    if AmbientMaterials == nil then
+        return
+    end
+
+    for i = 0, AmbientMaterials.Length - 1 do
+        local material = AmbientMaterials[i]
+        if material ~= nil then
+            material:SetColor("_SkyColor", skyColor)
+            material:SetColor("_EquatorColor", equatorColor)
+            material:SetColor("_GroundColor", groundColor)
+        end
+    end
+end
+
+local function ApplyAmbientColors(nightBlend01)
+    local skyColor = LerpColor(
+        ResolveColor(DaySkyColor, CS.UnityEngine.Color.white),
+        ResolveColor(NightSkyColor, CS.UnityEngine.Color.black),
+        nightBlend01)
+    local equatorColor = LerpColor(
+        ResolveColor(DayEquatorColor, CS.UnityEngine.Color.white),
+        ResolveColor(NightEquatorColor, CS.UnityEngine.Color.black),
+        nightBlend01)
+    local groundColor = LerpColor(
+        ResolveColor(DayGroundColor, CS.UnityEngine.Color.white),
+        ResolveColor(NightGroundColor, CS.UnityEngine.Color.black),
+        nightBlend01)
+
+    CS.UnityEngine.RenderSettings.ambientSkyColor = skyColor
+    CS.UnityEngine.RenderSettings.ambientEquatorColor = equatorColor
+    CS.UnityEngine.RenderSettings.ambientGroundColor = groundColor
+    CS.UnityEngine.Shader.SetGlobalColor("_SkyColor", skyColor)
+    CS.UnityEngine.Shader.SetGlobalColor("_EquatorColor", equatorColor)
+    CS.UnityEngine.Shader.SetGlobalColor("_GroundColor", groundColor)
+    ApplyAmbientMaterialColors(skyColor, equatorColor, groundColor)
+end
+
+local function ApplyEnvironmentBlend(nightBlend01)
+    local settings = GetSceneEnvironmentSettings()
+    if settings ~= nil then
+        local ok, err = pcall(function()
+            settings.mainLightStrength = LerpFloat(DayMainLightStrength or 1, NightMainLightStrength or 0, nightBlend01)
+        end)
+        if not ok then
+            Log("settings.mainLightStrength write failed: " .. tostring(err))
+        end
+    end
+
+    CS.UnityEngine.Shader.SetGlobalFloat(
+        "_EmissionIntensity",
+        LerpFloat(DayEmissionIntensity or 0, NightEmissionIntensity or 1, nightBlend01))
+    ApplyAmbientColors(nightBlend01)
+end
+
+local function ResolveNightBlend01(reverseBlend, pulseProgress)
+    local progress = Clamp01(pulseProgress)
+    if reverseBlend ~= nil and reverseBlend > 0.5 then
+        return 1 - progress
+    end
+    return progress
+end
+
 function ResetToBase()
     orbitPulseActive = false
     orbitPulseTargetReverseBlend = nil
@@ -46,6 +171,7 @@ function ResetToBase()
     local material = GetActiveSkyMaterial()
     if material ~= nil then
         ApplySkyPulse(material:GetFloat("_ReverseBlend"), 0)
+        ApplyEnvironmentBlend(ResolveNightBlend01(material:GetFloat("_ReverseBlend"), 0))
     end
 end
 
@@ -61,6 +187,7 @@ function BeginOrbitFx(totalDuration)
             orbitPulseTargetReverseBlend = currentReverseBlend
         end
         ApplySkyPulse(orbitPulseTargetReverseBlend, 0)
+        ApplyEnvironmentBlend(ResolveNightBlend01(orbitPulseTargetReverseBlend, 0))
     end
 
     if OrbitPulseParticle ~= nil then
@@ -92,7 +219,9 @@ function TickOrbitFx(deltaTime, progress01)
         orbitPulseTargetReverseBlend = reverseBlend
     end
 
-    ApplySkyPulse(reverseBlend, progress01 or 0)
+    local pulseProgress = progress01 or 0
+    ApplySkyPulse(reverseBlend, pulseProgress)
+    ApplyEnvironmentBlend(ResolveNightBlend01(reverseBlend, pulseProgress))
 end
 
 function CompleteOrbitFx()
@@ -102,4 +231,27 @@ function CompleteOrbitFx()
 
     orbitPulseActive = false
     orbitPulseCycleCount = orbitPulseCycleCount + 1
+end
+
+function GetOrbitNightBlend01(progress01)
+    local reverseBlend = orbitPulseTargetReverseBlend
+    if reverseBlend == nil then
+        local material = GetActiveSkyMaterial()
+        if material ~= nil then
+            reverseBlend = material:GetFloat("_ReverseBlend")
+        else
+            reverseBlend = 0
+        end
+    end
+
+    return ResolveNightBlend01(reverseBlend, progress01)
+end
+
+function GetCurrentNightBlend01()
+    local material = GetActiveSkyMaterial()
+    if material == nil then
+        return 0
+    end
+
+    return ResolveNightBlend01(material:GetFloat("_ReverseBlend"), material:GetFloat("_PulseProgress"))
 end

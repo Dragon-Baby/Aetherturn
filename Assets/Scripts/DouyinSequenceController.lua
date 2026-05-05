@@ -101,6 +101,7 @@ function Awake()
         Registry.script.Validate()
         Registry.script.CollectAll()
         Registry.script.ResetAllToBase()
+        Registry.script.SetAllVertexLightIntensityScale(Registry.script.GetCurrentNightBlend01())
     else
         Log("Registry is nil or Registry.script is nil")
     end
@@ -119,6 +120,7 @@ function Update()
     end
 
     local deltaTime = CS.UnityEngine.Time.deltaTime
+    Registry.script.TickVertexLights(deltaTime)
 
     local gearDriveFactor = nil
     if currentState == STATE_CENTER_SPIN then
@@ -161,7 +163,9 @@ function Update()
 
     if currentState == STATE_CENTER_SPIN then
         Registry.script.TickOrbit(deltaTime)
-        Registry.script.TickOrbitFx(deltaTime, Registry.script.GetOrbitProgress01())
+        local orbitProgress = Registry.script.GetOrbitProgress01()
+        Registry.script.TickOrbitFx(deltaTime, orbitProgress)
+        Registry.script.SetAllVertexLightIntensityScale(Registry.script.GetOrbitNightBlend01(orbitProgress))
         if Registry.script.IsOrbitComplete() then
             Registry.script.CompleteOrbitFx()
             EnterWaitState(DelayAfterCenterSpin, STATE_BALL_RESET)
@@ -184,6 +188,7 @@ function Update()
                 EnterWaitState(DelayAfterRetract, STATE_PENDULUM)
             else
                 Registry.script.ResetAllToBase()
+                Registry.script.SetAllVertexLightIntensityScale(Registry.script.GetCurrentNightBlend01())
                 EnterState(STATE_IDLE)
                 isPlaying = false
             end
@@ -221,6 +226,7 @@ function RestartSequence()
 
     Registry.script.CollectAll()
     Registry.script.ResetAllToBase()
+    Registry.script.SetAllVertexLightIntensityScale(Registry.script.GetCurrentNightBlend01())
     waitTimer = 0
     waitNextState = STATE_IDLE
     isPlaying = true
@@ -234,6 +240,7 @@ function StopSequence()
 
     if HasRegistry() then
         Registry.script.ResetAllToBase()
+        Registry.script.SetAllVertexLightIntensityScale(Registry.script.GetCurrentNightBlend01())
     end
 
     EnterState(STATE_IDLE)

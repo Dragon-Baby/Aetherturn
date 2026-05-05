@@ -267,7 +267,7 @@ MonoBehaviour:
       type: {class: DouyinLuaDataVarInt, ns: , asm: com.douyin.script}
       data:
         varName: SwingCount
-        Data: 17
+        Data: 1
 --- !u!1 &2131675022972142438
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,6 +509,17 @@ MonoBehaviour:
   - rid: 5760247531563647083
   - rid: 5760247531563647084
   - rid: 5760247531563647085
+  - rid: 2471400992103727153
+  - rid: 2471400992103727154
+  - rid: 2471400992103727155
+  - rid: 2471400992103727156
+  - rid: 2471400992103727170
+  - rid: 2471400992103727171
+  - rid: 2471400992103727172
+  - rid: 2471400992103727173
+  - rid: 2471400992103727174
+  - rid: 2471400992103727175
+  - rid: 2471400992103727163
   IsServerScript: 0
   IsManualedVar: 1
   eNetState: 0
@@ -516,6 +527,62 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 2471400992103727153
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: DayMainLightStrength
+        Data: 1.8
+    - rid: 2471400992103727154
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: NightMainLightStrength
+        Data: 0.1
+    - rid: 2471400992103727155
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: DayEmissionIntensity
+        Data: 0
+    - rid: 2471400992103727156
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: NightEmissionIntensity
+        Data: 1
+    - rid: 2471400992103727163
+      type: {class: DouyinLuaDataUObjectArr, ns: , asm: com.douyin.script}
+      data:
+        varName: AmbientMaterials
+        Data: []
+        varType: UnityEngine.Material[]
+    - rid: 2471400992103727170
+      type: {class: DouyinLuaDataColor, ns: , asm: com.douyin.script}
+      data:
+        varName: DaySkyColor
+        Data: {r: 0.54901963, g: 0.7490196, b: 1, a: 1}
+    - rid: 2471400992103727171
+      type: {class: DouyinLuaDataColor, ns: , asm: com.douyin.script}
+      data:
+        varName: DayEquatorColor
+        Data: {r: 0.7019608, g: 0.7490196, b: 0.7882353, a: 1}
+    - rid: 2471400992103727172
+      type: {class: DouyinLuaDataColor, ns: , asm: com.douyin.script}
+      data:
+        varName: DayGroundColor
+        Data: {r: 0.34901962, g: 0.29803923, b: 0.2509804, a: 1}
+    - rid: 2471400992103727173
+      type: {class: DouyinLuaDataColor, ns: , asm: com.douyin.script}
+      data:
+        varName: NightSkyColor
+        Data: {r: 0.12847058, g: 0.25694123, b: 0.504, a: 1}
+    - rid: 2471400992103727174
+      type: {class: DouyinLuaDataColor, ns: , asm: com.douyin.script}
+      data:
+        varName: NightEquatorColor
+        Data: {r: 0.11640001, g: 0.18915002, b: 0.291, a: 1}
+    - rid: 2471400992103727175
+      type: {class: DouyinLuaDataColor, ns: , asm: com.douyin.script}
+      data:
+        varName: NightGroundColor
+        Data: {r: 0.130625, g: 0.130625, b: 0.20899999, a: 1}
     - rid: 5760247531563647082
       type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
       data:
@@ -716,6 +783,7 @@ MonoBehaviour:
   - rid: 5760247531563646990
   - rid: 5760247531563646991
   - rid: 5760247531563646992
+  - rid: 2471400992103727135
   - rid: 5760247531563646993
   IsServerScript: 0
   IsManualedVar: 1
@@ -724,6 +792,12 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 2471400992103727135
+      type: {class: DouyinLuaDataMono, ns: , asm: com.douyin.script}
+      data:
+        varName: VertexLightManager
+        Data: {fileID: 0}
+        varType: DouyinScript
     - rid: 5760247531563646987
       type: {class: DouyinLuaDataMono, ns: , asm: com.douyin.script}
       data:

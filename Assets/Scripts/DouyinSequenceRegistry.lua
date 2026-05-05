@@ -4,6 +4,7 @@
 ---@var OrbitGroup             :DouyinScript
 ---@var GearGroup              :DouyinScript
 ---@var FxBridge               :DouyinScript
+---@var VertexLightManager     :DouyinScript
 ---@var EnableValidationLog    :bool = true
 ---@end
 
@@ -48,6 +49,9 @@ function Validate()
     if FxBridge ~= nil then
         ok = ValidateScript(FxBridge, "FxBridge") and ok
     end
+    if VertexLightManager ~= nil then
+        ok = ValidateScript(VertexLightManager, "VertexLightManager") and ok
+    end
     return ok
 end
 
@@ -57,6 +61,7 @@ function CollectAll()
     CallScript(BallGroup, "CollectUnits")
     CallScript(OrbitGroup, "CollectUnits")
     CallScript(GearGroup, "CollectUnits")
+    CallScript(VertexLightManager, "CollectLights")
 end
 
 function ResetAllToBase()
@@ -66,6 +71,7 @@ function ResetAllToBase()
     CallScript(OrbitGroup, "ResetToBase")
     CallScript(GearGroup, "ResetToBase")
     CallScript(FxBridge, "ResetToBase")
+    CallScript(VertexLightManager, "ResetToBase")
 end
 
 function BeginPendulums()
@@ -162,4 +168,52 @@ end
 
 function CompleteOrbitFx()
     CallScript(FxBridge, "CompleteOrbitFx")
+end
+
+function GetOrbitNightBlend01(progress01)
+    local blend = CallScript(FxBridge, "GetOrbitNightBlend01", progress01)
+    if blend == nil then
+        return 0
+    end
+    return blend
+end
+
+function GetCurrentNightBlend01()
+    local blend = CallScript(FxBridge, "GetCurrentNightBlend01")
+    if blend == nil then
+        return 0
+    end
+    return blend
+end
+
+function TickVertexLights(deltaTime)
+    CallScript(VertexLightManager, "Tick", deltaTime)
+end
+
+function ApplyVertexLights()
+    CallScript(VertexLightManager, "ApplyGlobals")
+end
+
+function SetVertexLightIntensity(lightIndex, intensity)
+    CallScript(VertexLightManager, "SetLightIntensity", lightIndex, intensity)
+end
+
+function SetVertexLightIntensityScale(lightIndex, scale)
+    CallScript(VertexLightManager, "SetLightIntensityScale", lightIndex, scale)
+end
+
+function FadeVertexLightIntensity(lightIndex, targetIntensity, duration)
+    CallScript(VertexLightManager, "FadeLightIntensity", lightIndex, targetIntensity, duration)
+end
+
+function FadeVertexLightIntensityScale(lightIndex, targetScale, duration)
+    CallScript(VertexLightManager, "FadeLightIntensityScale", lightIndex, targetScale, duration)
+end
+
+function SetAllVertexLightIntensityScale(scale)
+    CallScript(VertexLightManager, "SetAllIntensityScale", scale)
+end
+
+function FadeAllVertexLightIntensityScale(targetScale, duration)
+    CallScript(VertexLightManager, "FadeAllIntensityScale", targetScale, duration)
 end
