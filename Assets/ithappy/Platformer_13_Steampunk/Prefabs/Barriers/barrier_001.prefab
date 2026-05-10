@@ -97,7 +97,7 @@ MonoBehaviour:
       type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
       data:
         varName: InitialIntensity
-        Data: 100
+        Data: 30
     - rid: 2471400992103727108
       type: {class: DouyinLuaDataMono, ns: , asm: com.douyin.script}
       data:
