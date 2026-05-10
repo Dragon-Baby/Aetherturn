@@ -1,5 +1,9 @@
 ---@var SceneEnvironment       :DouyinSceneEnvironment
 ---@var OrbitPulseParticle     :UnityEngine.ParticleSystem
+---@var OrbitPulseAudio        :UnityEngine.AudioSource
+---@var OrbitPulseAudioObject  :UnityEngine.GameObject
+---@var EnableOrbitPulseAudio  :bool = true
+---@var OrbitPulseAudioVolume  :float = 1
 ---@var EnableEnvironmentSwitch:bool = false
 ---@var EnableDebugLog         :bool = true
 ---@var DayMainLightStrength   :float = 1
@@ -76,6 +80,55 @@ local function Clamp01(value)
         return 1
     end
     return value
+end
+
+local function ResolveAudioSource(audioSource, audioObject)
+    if audioSource ~= nil then
+        return audioSource
+    end
+
+    if audioObject ~= nil then
+        return audioObject:GetComponent(typeof(CS.UnityEngine.AudioSource))
+    end
+
+    return nil
+end
+
+local function PlayOrbitPulseAudio()
+    if EnableOrbitPulseAudio == false then
+        return
+    end
+
+    local audioSource = ResolveAudioSource(OrbitPulseAudio, OrbitPulseAudioObject)
+    if audioSource == nil then
+        return
+    end
+
+    local ok, errorMessage = pcall(function()
+        audioSource.enabled = true
+        audioSource.playOnAwake = false
+        audioSource.loop = false
+        audioSource.volume = Clamp01(OrbitPulseAudioVolume or 1)
+        audioSource:Stop()
+        audioSource:Play()
+    end)
+    if not ok then
+        Log("Orbit pulse audio play failed: " .. tostring(errorMessage))
+    end
+end
+
+local function StopOrbitPulseAudio()
+    local audioSource = ResolveAudioSource(OrbitPulseAudio, OrbitPulseAudioObject)
+    if audioSource == nil then
+        return
+    end
+
+    local ok, errorMessage = pcall(function()
+        audioSource:Stop()
+    end)
+    if not ok then
+        Log("Orbit pulse audio stop failed: " .. tostring(errorMessage))
+    end
 end
 
 local function LerpFloat(fromValue, toValue, t)
@@ -167,6 +220,7 @@ end
 function ResetToBase()
     orbitPulseActive = false
     orbitPulseTargetReverseBlend = nil
+    StopOrbitPulseAudio()
 
     local material = GetActiveSkyMaterial()
     if material ~= nil then
@@ -197,6 +251,8 @@ function BeginOrbitFx(totalDuration)
         end
         OrbitPulseParticle:Play()
     end
+
+    PlayOrbitPulseAudio()
 
     if EnableEnvironmentSwitch then
         Log("EnableEnvironmentSwitch is true, but custom environment switching remains intentionally isolated.")
