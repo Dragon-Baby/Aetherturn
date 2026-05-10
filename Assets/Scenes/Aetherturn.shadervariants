@@ -66,3 +66,12 @@ ShaderVariantCollection:
         passType: 11
       - keywords: 
         passType: 13
+  - first: {fileID: 4800000, guid: d94762d27c2a48a4dacca73eef6e8ce8, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: 
+        passType: 11
+      - keywords: 
+        passType: 13
