@@ -5,6 +5,7 @@
 ---@var GearGroup              :DouyinScript
 ---@var FxBridge               :DouyinScript
 ---@var VertexLightManager     :DouyinScript
+---@var AudioBridge            :DouyinScript
 ---@var EnableValidationLog    :bool = true
 ---@end
 
@@ -52,6 +53,9 @@ function Validate()
     if VertexLightManager ~= nil then
         ok = ValidateScript(VertexLightManager, "VertexLightManager") and ok
     end
+    if AudioBridge ~= nil then
+        ok = ValidateScript(AudioBridge, "AudioBridge") and ok
+    end
     return ok
 end
 
@@ -72,6 +76,7 @@ function ResetAllToBase()
     CallScript(GearGroup, "ResetToBase")
     CallScript(FxBridge, "ResetToBase")
     CallScript(VertexLightManager, "ResetToBase")
+    CallScript(AudioBridge, "ResetToBase")
 end
 
 function BeginPendulums()
@@ -216,4 +221,24 @@ end
 
 function FadeAllVertexLightIntensityScale(targetScale, duration)
     CallScript(VertexLightManager, "FadeAllIntensityScale", targetScale, duration)
+end
+
+function BeginSequenceAudio(stateName)
+    CallScript(AudioBridge, "BeginState", stateName)
+end
+
+function TickSequenceAudio(deltaTime)
+    CallScript(AudioBridge, "Tick", deltaTime)
+end
+
+function PauseSequenceAudio()
+    CallScript(AudioBridge, "PauseAll")
+end
+
+function ResumeSequenceAudio()
+    CallScript(AudioBridge, "ResumeActive")
+end
+
+function StopSequenceAudio()
+    CallScript(AudioBridge, "StopAll")
 end

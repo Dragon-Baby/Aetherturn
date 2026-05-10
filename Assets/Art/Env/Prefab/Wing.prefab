@@ -524,7 +524,7 @@ MonoBehaviour:
       type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
       data:
         varName: Speed
-        Data: 1
+        Data: 1.5
     - rid: 5760247531563647051
       type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
       data:

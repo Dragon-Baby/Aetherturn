@@ -82,7 +82,7 @@ MonoBehaviour:
       type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
       data:
         varName: RotateSpeed
-        Data: -50
+        Data: -200
     - rid: 5760247531563647005
       type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
       data:
@@ -203,7 +203,7 @@ MonoBehaviour:
       type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
       data:
         varName: RotateSpeed
-        Data: 50
+        Data: 200
     - rid: 5760247531563647002
       type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
       data:
@@ -291,7 +291,7 @@ MonoBehaviour:
       type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
       data:
         varName: RotateSpeed
-        Data: -50
+        Data: -200
     - rid: 5760247531563646999
       type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
       data:
@@ -504,7 +504,7 @@ MonoBehaviour:
       type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
       data:
         varName: RotateSpeed
-        Data: 50
+        Data: 200
     - rid: 5760247531563646996
       type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
       data:

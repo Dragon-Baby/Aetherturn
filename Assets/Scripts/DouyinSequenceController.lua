@@ -19,8 +19,20 @@ local STATE_BALL_RESET = 5
 local STATE_RETRACT = 6
 local STATE_WAIT = 7
 
+local STATE_NAMES = {
+    [STATE_IDLE] = "Idle",
+    [STATE_PENDULUM] = "Pendulum",
+    [STATE_EXTEND] = "ExtendForward",
+    [STATE_BALL_ROTATE] = "BallRotate",
+    [STATE_CENTER_SPIN] = "CenterSpin",
+    [STATE_BALL_RESET] = "BallReset",
+    [STATE_RETRACT] = "Retract",
+    [STATE_WAIT] = "Wait"
+}
+
 local currentState = STATE_IDLE
 local isPlaying = false
+local pendingAutoPlay = false
 local waitTimer = 0
 local waitNextState = STATE_IDLE
 
@@ -49,6 +61,12 @@ local function EnterState(state)
     Log("EnterState=" .. tostring(state))
 end
 
+local function BeginAudioState(state)
+    if HasRegistry() then
+        Registry.script.BeginSequenceAudio(STATE_NAMES[state] or "Idle")
+    end
+end
+
 local function BeginState(state)
     if not HasRegistry() then
         EnterState(STATE_IDLE)
@@ -71,6 +89,7 @@ local function BeginState(state)
         Registry.script.BeginExtendBackward()
     end
 
+    BeginAudioState(state)
     EnterState(state)
 end
 
@@ -83,6 +102,7 @@ local function EnterWaitState(duration, nextState)
 
     waitTimer = waitDuration
     waitNextState = nextState
+    BeginAudioState(STATE_WAIT)
     EnterState(STATE_WAIT)
 end
 
@@ -106,21 +126,27 @@ function Awake()
         Log("Registry is nil or Registry.script is nil")
     end
 
-    isPlaying = AutoPlay and HasRegistry()
-    if isPlaying then
-        BeginState(STATE_PENDULUM)
-    else
-        EnterState(STATE_IDLE)
-    end
+    pendingAutoPlay = AutoPlay and HasRegistry()
+    isPlaying = false
+    EnterState(STATE_IDLE)
 end
 
 function Update()
+    if pendingAutoPlay then
+        pendingAutoPlay = false
+        if HasRegistry() then
+            isPlaying = true
+            BeginState(STATE_PENDULUM)
+        end
+    end
+
     if not isPlaying or not HasRegistry() then
         return
     end
 
     local deltaTime = CS.UnityEngine.Time.deltaTime
     Registry.script.TickVertexLights(deltaTime)
+    Registry.script.TickSequenceAudio(deltaTime)
 
     local gearDriveFactor = nil
     if currentState == STATE_CENTER_SPIN then
@@ -204,6 +230,7 @@ function PlaySequence()
 
     Registry.script.CollectAll()
     if currentState == STATE_IDLE then
+        pendingAutoPlay = false
         BeginState(STATE_PENDULUM)
     end
     isPlaying = true
@@ -211,10 +238,14 @@ end
 
 function PauseSequence()
     isPlaying = false
+    if HasRegistry() then
+        Registry.script.PauseSequenceAudio()
+    end
 end
 
 function ResumeSequence()
     if HasRegistry() then
+        Registry.script.ResumeSequenceAudio()
         isPlaying = true
     end
 end
@@ -227,6 +258,7 @@ function RestartSequence()
     Registry.script.CollectAll()
     Registry.script.ResetAllToBase()
     Registry.script.SetAllVertexLightIntensityScale(Registry.script.GetCurrentNightBlend01())
+    pendingAutoPlay = false
     waitTimer = 0
     waitNextState = STATE_IDLE
     isPlaying = true
@@ -235,12 +267,14 @@ end
 
 function StopSequence()
     isPlaying = false
+    pendingAutoPlay = false
     waitTimer = 0
     waitNextState = STATE_IDLE
 
     if HasRegistry() then
         Registry.script.ResetAllToBase()
         Registry.script.SetAllVertexLightIntensityScale(Registry.script.GetCurrentNightBlend01())
+        Registry.script.StopSequenceAudio()
     end
 
     EnterState(STATE_IDLE)

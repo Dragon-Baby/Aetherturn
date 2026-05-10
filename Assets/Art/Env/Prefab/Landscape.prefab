@@ -1369,7 +1369,7 @@ MonoBehaviour:
       type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
       data:
         varName: OrbitLoops
-        Data: 50
+        Data: 100
     - rid: 5760247531563647078
       type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
       data:
@@ -1379,7 +1379,7 @@ MonoBehaviour:
       type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
       data:
         varName: CruiseDuration
-        Data: 10
+        Data: 25
     - rid: 5760247531563647080
       type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
       data:
@@ -1584,6 +1584,14 @@ PrefabInstance:
       propertyPath: managedReferences[5760247531563647068].Data
       value: 
       objectReference: {fileID: 9002345290843670048}
+    - target: {fileID: 7472651531408203504, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: managedReferences[5760247531563647070].Data
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7472651531408203504, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: managedReferences[5760247531563647072].Data
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 8241933111644116886, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
       propertyPath: NetGUID.n1
       value: 12886960523033198208
@@ -1698,6 +1706,14 @@ PrefabInstance:
       propertyPath: managedReferences[5760247531563647068].Data
       value: 
       objectReference: {fileID: 9002345290843670048}
+    - target: {fileID: 7472651531408203504, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: managedReferences[5760247531563647070].Data
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7472651531408203504, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: managedReferences[5760247531563647072].Data
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 8241933111644116886, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
       propertyPath: NetGUID.n1
       value: 5658517121828472650
