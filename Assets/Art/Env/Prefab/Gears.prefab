@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 826230391415408360}
   - component: {fileID: 8671039989217776322}
   - component: {fileID: 7180501580791815435}
+  - component: {fileID: 9010023906707637795}
   m_Layer: 0
   m_Name: MainGear
   m_TagString: Untagged
@@ -88,6 +89,21 @@ MonoBehaviour:
       data:
         varName: UseLocalSpace
         Data: 1
+--- !u!114 &9010023906707637795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063997942291117080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69d523568e0c7bf4487ea0e79b8d9147, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotationAxis: {x: 0, y: 0, z: 1}
+  RotateSpeed: -200
+  UseLocalSpace: 1
 --- !u!1 &2210520191148073736
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,6 +148,7 @@ GameObject:
   - component: {fileID: 7118278086190675316}
   - component: {fileID: 2092087614690600673}
   - component: {fileID: 7910945225889920465}
+  - component: {fileID: 6098411687768357791}
   m_Layer: 0
   m_Name: Gear03
   m_TagString: Untagged
@@ -209,6 +226,21 @@ MonoBehaviour:
       data:
         varName: UseLocalSpace
         Data: 1
+--- !u!114 &6098411687768357791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4202356619840580337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69d523568e0c7bf4487ea0e79b8d9147, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotationAxis: {x: 0, y: 0, z: 1}
+  RotateSpeed: 200
+  UseLocalSpace: 1
 --- !u!1 &4412783060309855333
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,6 +252,7 @@ GameObject:
   - component: {fileID: 530150380698128799}
   - component: {fileID: 7963262233105994688}
   - component: {fileID: 4079051760943565725}
+  - component: {fileID: 2921252834197090411}
   m_Layer: 0
   m_Name: Gear02
   m_TagString: Untagged
@@ -297,6 +330,21 @@ MonoBehaviour:
       data:
         varName: UseLocalSpace
         Data: 1
+--- !u!114 &2921252834197090411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4412783060309855333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69d523568e0c7bf4487ea0e79b8d9147, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotationAxis: {x: 0, y: 0, z: 1}
+  RotateSpeed: -200
+  UseLocalSpace: 1
 --- !u!1 &6371964407890248015
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,6 +481,7 @@ GameObject:
   - component: {fileID: 2374066066483915142}
   - component: {fileID: 2087303445576437825}
   - component: {fileID: 8548029591193681155}
+  - component: {fileID: 3074519985692618602}
   m_Layer: 0
   m_Name: Gear01
   m_TagString: Untagged
@@ -510,3 +559,18 @@ MonoBehaviour:
       data:
         varName: UseLocalSpace
         Data: 1
+--- !u!114 &3074519985692618602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8385498825880766145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69d523568e0c7bf4487ea0e79b8d9147, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotationAxis: {x: 0, y: 0, z: 1}
+  RotateSpeed: 200
+  UseLocalSpace: 1

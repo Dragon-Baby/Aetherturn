@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5645053534062425775}
   - component: {fileID: 5772836304272722782}
   - component: {fileID: 6685225876220010549}
+  - component: {fileID: 2062375958679431984}
   m_Layer: 0
   m_Name: Spine02
   m_TagString: Untagged
@@ -95,6 +96,22 @@ MonoBehaviour:
       data:
         varName: RotateSpeed
         Data: 10
+--- !u!114 &2062375958679431984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479683872344138177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0201bed9cb8a0a342a8766066ecd32db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotationAxis: {x: 0, y: 0, z: 1}
+  UseLocalSpace: 1
+  RotateAngle: 90
+  RotateSpeed: 10
 --- !u!1 &2053921578110588913
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,6 +123,7 @@ GameObject:
   - component: {fileID: 4033807832096742966}
   - component: {fileID: 4589962847919257757}
   - component: {fileID: 7472651531408203504}
+  - component: {fileID: 4617865264361557643}
   m_Layer: 0
   m_Name: Root
   m_TagString: Untagged
@@ -209,6 +227,25 @@ MonoBehaviour:
       data:
         varName: KeepOriginalRotation
         Data: 0
+--- !u!114 &4617865264361557643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053921578110588913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fc8814d823cb345ab745306a242f37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OrbitCenter: {fileID: 0}
+  OrbitAxis: {x: 0, y: 1, z: 0}
+  OrbitLoops: 50
+  AccelDuration: 10
+  CruiseDuration: 10
+  DecelDuration: 10
+  KeepOriginalRotation: 0
 --- !u!1 &3825038444962562280
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,6 +425,7 @@ GameObject:
   - component: {fileID: 2575049163518856409}
   - component: {fileID: 885160899639619119}
   - component: {fileID: 7617607192068139402}
+  - component: {fileID: 12714650650116184}
   m_Layer: 0
   m_Name: Spine01
   m_TagString: Untagged
@@ -472,6 +510,22 @@ MonoBehaviour:
       data:
         varName: MoveSpeed
         Data: 0.05
+--- !u!114 &12714650650116184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7879350832940611879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0112e8e07e3d544ab33e39b2ea3663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveAxis: {x: -1, y: 0, z: 0}
+  UseLocalSpace: 1
+  MoveDistance: 0.15
+  MoveSpeed: 0.05
 --- !u!1 &8373529027682301515
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,6 +629,7 @@ GameObject:
   - component: {fileID: 8589210545977489736}
   - component: {fileID: 5454889424514485391}
   - component: {fileID: 6601599501098898565}
+  - component: {fileID: 4802650485711711248}
   m_Layer: 0
   m_Name: Gear
   m_TagString: Untagged
@@ -673,3 +728,21 @@ MonoBehaviour:
       data:
         varName: StopAngle
         Data: 0
+--- !u!114 &4802650485711711248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8796353975622400729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9da43c234ec9348429f9133ea3e5b03d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotationAxis: {x: 1, y: 0, z: 0}
+  UseLocalSpace: 1
+  MaxAngle: 60
+  Speed: 1.5
+  StartPhase: 0
+  StopAngle: 0

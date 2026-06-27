@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2854583795899385568}
   - component: {fileID: 6640883929591017321}
   - component: {fileID: 890185759338328852}
+  - component: {fileID: 2860931488521998316}
   m_Layer: 0
   m_Name: MoveGroup
   m_TagString: Untagged
@@ -85,6 +86,22 @@ MonoBehaviour:
       data:
         varName: UnitScriptName
         Data: DouyinSequenceMoveUnit
+--- !u!114 &2860931488521998316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039793323156075401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f4dc90c63d88184b876c2d44d2d3569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitObjects:
+  - {fileID: 2759902106664251020}
+  - {fileID: 5242235391454719162}
+  UnitScriptName: DouyinSequenceMoveUnit
 --- !u!1 &1296124171399925204
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,6 +113,7 @@ GameObject:
   - component: {fileID: 2034636686946278880}
   - component: {fileID: 2492258713072465682}
   - component: {fileID: 7552115598055194188}
+  - component: {fileID: 934796757976582981}
   m_Layer: 0
   m_Name: OrbitGroup
   m_TagString: Untagged
@@ -177,6 +195,24 @@ MonoBehaviour:
       data:
         varName: PrimaryUnitIndex
         Data: 1
+--- !u!114 &934796757976582981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296124171399925204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d62541b6dd4904e4ea3b66412151a644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitObjects:
+  - {fileID: 6310890299962937319}
+  - {fileID: 6310890301330538586}
+  - {fileID: 4114535571340345964}
+  UnitScriptName: DouyinSequenceOrbitUnit
+  PrimaryUnitIndex: 1
 --- !u!1 &1919854140268950584
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,6 +224,7 @@ GameObject:
   - component: {fileID: 1538330756391451636}
   - component: {fileID: 9120360887138920972}
   - component: {fileID: 6696128598904690486}
+  - component: {fileID: 7619942399622599587}
   m_Layer: 0
   m_Name: PendulumGroup
   m_TagString: Untagged
@@ -268,6 +305,23 @@ MonoBehaviour:
       data:
         varName: SwingCount
         Data: 1
+--- !u!114 &7619942399622599587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919854140268950584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7183a09002be2fd46b9997f0ff06f597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitObjects:
+  - {fileID: 3532751562241224050}
+  - {fileID: 6884833759039369028}
+  UnitScriptName: DouyinSequencePendulumUnit
+  SwingCount: 17
 --- !u!1 &2131675022972142438
 GameObject:
   m_ObjectHideFlags: 0
@@ -312,6 +366,7 @@ GameObject:
   - component: {fileID: 2131675023168108543}
   - component: {fileID: 759715590470548746}
   - component: {fileID: 3009629960246070944}
+  - component: {fileID: 7782127101195197912}
   m_Layer: 0
   m_Name: Landscape
   m_TagString: Untagged
@@ -443,6 +498,28 @@ MonoBehaviour:
       data:
         varName: EnableDebugLog
         Data: 0
+--- !u!114 &7782127101195197912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131675023168108542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8be810409f96ce8419154741e6426f50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Registry: {fileID: 6679007588110228786}
+  DelayAfterPendulum: 1
+  DelayAfterExtend: 1
+  DelayAfterBallRotate: 1
+  DelayAfterCenterSpin: 1
+  DelayAfterBallReset: 1
+  DelayAfterRetract: 1
+  AutoPlay: 1
+  LoopSequence: 1
+  EnableDebugLog: 0
 --- !u!1 &2721960942953785523
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,6 +531,7 @@ GameObject:
   - component: {fileID: 5584915287323021923}
   - component: {fileID: 3222317228462516915}
   - component: {fileID: 4095998381084282219}
+  - component: {fileID: 7698632994798220120}
   m_Layer: 0
   m_Name: FxBridge
   m_TagString: Untagged
@@ -508,6 +586,10 @@ MonoBehaviour:
   ParaLuaBindingData:
   - rid: 5760247531563647082
   - rid: 5760247531563647083
+  - rid: 2471401222266683392
+  - rid: 2471401222266683393
+  - rid: 2471401222266683394
+  - rid: 2471401222266683395
   - rid: 5760247531563647084
   - rid: 5760247531563647085
   - rid: 2471400992103727153
@@ -584,6 +666,28 @@ MonoBehaviour:
       data:
         varName: NightGroundColor
         Data: {r: 0.130625, g: 0.130625, b: 0.20899999, a: 1}
+    - rid: 2471401222266683392
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: OrbitPulseAudio
+        Data: {fileID: 0}
+        varType: UnityEngine.AudioSource
+    - rid: 2471401222266683393
+      type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
+      data:
+        varName: OrbitPulseAudioObject
+        Data: {fileID: 0}
+        varType: UnityEngine.GameObject
+    - rid: 2471401222266683394
+      type: {class: DouyinLuaDataVarBoolean, ns: , asm: com.douyin.script}
+      data:
+        varName: EnableOrbitPulseAudio
+        Data: 1
+    - rid: 2471401222266683395
+      type: {class: DouyinLuaDataFloat, ns: , asm: com.douyin.script}
+      data:
+        varName: OrbitPulseAudioVolume
+        Data: 1
     - rid: 5760247531563647082
       type: {class: DouyinLuaDataUObject, ns: , asm: com.douyin.script}
       data:
@@ -606,6 +710,38 @@ MonoBehaviour:
       data:
         varName: EnableDebugLog
         Data: 1
+--- !u!114 &7698632994798220120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2721960942953785523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d8760b01756d3d47a7adb777e08038b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneEnvironment: {fileID: 0}
+  SkyMaterial: {fileID: 0}
+  OrbitPulseParticle: {fileID: 0}
+  OrbitPulseAudio: {fileID: 0}
+  OrbitPulseAudioObject: {fileID: 0}
+  EnableOrbitPulseAudio: 1
+  OrbitPulseAudioVolume: 1
+  EnableEnvironmentSwitch: 0
+  EnableDebugLog: 1
+  DayMainLightStrength: 1.8
+  NightMainLightStrength: 0.1
+  DayEmissionIntensity: 0
+  NightEmissionIntensity: 1
+  DaySkyColor: {r: 0.54901963, g: 0.7490196, b: 1, a: 1}
+  DayEquatorColor: {r: 0.7019608, g: 0.7490196, b: 0.7882353, a: 1}
+  DayGroundColor: {r: 0.34901962, g: 0.29803923, b: 0.2509804, a: 1}
+  NightSkyColor: {r: 0.12941177, g: 0.25882354, b: 0.5058824, a: 1}
+  NightEquatorColor: {r: 0.11764706, g: 0.1882353, b: 0.2901961, a: 1}
+  NightGroundColor: {r: 0.12941177, g: 0.12941177, b: 0.20784314, a: 1}
+  AmbientMaterials: []
 --- !u!1 &3482421203331700790
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,6 +753,7 @@ GameObject:
   - component: {fileID: 6261646294462804526}
   - component: {fileID: 206133676247217044}
   - component: {fileID: 42585007849933692}
+  - component: {fileID: 5785132089715770773}
   m_Layer: 0
   m_Name: GearGroups
   m_TagString: Untagged
@@ -715,6 +852,37 @@ MonoBehaviour:
       data:
         varName: UnitScriptName
         Data: DouyinSequenceGearUnit
+--- !u!114 &5785132089715770773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3482421203331700790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a904d6dff770a4889cbdfc7d929b20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitObjects:
+  - {fileID: 8909892837995655363}
+  - {fileID: 3658137052906682983}
+  - {fileID: 3866568429020962035}
+  - {fileID: 1395484377222545946}
+  - {fileID: 7406762705184155150}
+  - {fileID: 3434002828185152682}
+  - {fileID: 2937640688672770622}
+  - {fileID: 1022764073607943383}
+  - {fileID: 917151084603477105}
+  - {fileID: 5032909050175735509}
+  - {fileID: 4806717223712874561}
+  - {fileID: 7224316947110149800}
+  - {fileID: 6156633767490034852}
+  - {fileID: 2022923111331943936}
+  - {fileID: 1981093584977588372}
+  - {fileID: 4434722075589553789}
+  UnitScriptName: DouyinSequenceGearUnit
+  MinSpeedFactor: 0.1
 --- !u!1 &3957776157223743479
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,6 +939,7 @@ GameObject:
   - component: {fileID: 3571337627788827308}
   - component: {fileID: 5656831553055121831}
   - component: {fileID: 6526686180835134063}
+  - component: {fileID: 6679007588110228786}
   m_Layer: 0
   m_Name: SequenceRegistry
   m_TagString: Untagged
@@ -830,6 +999,7 @@ MonoBehaviour:
   - rid: 5760247531563646991
   - rid: 5760247531563646992
   - rid: 2471400992103727135
+  - rid: 2471401222266683396
   - rid: 5760247531563646993
   IsServerScript: 0
   IsManualedVar: 1
@@ -842,6 +1012,12 @@ MonoBehaviour:
       type: {class: DouyinLuaDataMono, ns: , asm: com.douyin.script}
       data:
         varName: VertexLightManager
+        Data: {fileID: 0}
+        varType: DouyinScript
+    - rid: 2471401222266683396
+      type: {class: DouyinLuaDataMono, ns: , asm: com.douyin.script}
+      data:
+        varName: AudioBridge
         Data: {fileID: 0}
         varType: DouyinScript
     - rid: 5760247531563646987
@@ -885,6 +1061,27 @@ MonoBehaviour:
       data:
         varName: EnableValidationLog
         Data: 1
+--- !u!114 &6679007588110228786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5335778033288248301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d84e0f291cb8e054b93f7d6e4feb0a61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PendulumGroup: {fileID: 7619942399622599587}
+  ExtendGroup: {fileID: 2860931488521998316}
+  BallGroup: {fileID: 2207258884589598982}
+  OrbitGroup: {fileID: 934796757976582981}
+  GearGroup: {fileID: 5785132089715770773}
+  FxBridge: {fileID: 7698632994798220120}
+  VertexLightManager: {fileID: 0}
+  AudioBridge: {fileID: 0}
+  EnableValidationLog: 1
 --- !u!1 &6137119815838781603
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,6 +1093,7 @@ GameObject:
   - component: {fileID: 6754725701096549248}
   - component: {fileID: 8228460229619120687}
   - component: {fileID: 5511547435840546493}
+  - component: {fileID: 2207258884589598982}
   m_Layer: 0
   m_Name: RotateGroup
   m_TagString: Untagged
@@ -970,6 +1168,22 @@ MonoBehaviour:
       data:
         varName: UnitScriptName
         Data: DouyinSequenceRotateUnit
+--- !u!114 &2207258884589598982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6137119815838781603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bd3503ebf6463d4082e40bee7ef0cd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnitObjects:
+  - {fileID: 6889613688227706474}
+  - {fileID: 3535851420144874588}
+  UnitScriptName: DouyinSequenceRotateUnit
 --- !u!1001 &1150962813335975426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1356,6 +1570,25 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5332809968238436118, guid: fa3184d97ffaf9a4c9062a6fc0e7249e, type: 3}
   m_PrefabInstance: {fileID: 2131675024203731185}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4674341966647383599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6310890299962937319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fc8814d823cb345ab745306a242f37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OrbitCenter: {fileID: 9002345290843670048}
+  OrbitAxis: {x: 0, y: 1, z: 0}
+  OrbitLoops: 100
+  AccelDuration: 10
+  CruiseDuration: 25
+  DecelDuration: 10
+  KeepOriginalRotation: 0
 --- !u!114 &5486826510877671114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1570,6 +1803,18 @@ PrefabInstance:
       propertyPath: NetGUID.n1
       value: 12886960523033198208
       objectReference: {fileID: 0}
+    - target: {fileID: 4617865264361557643, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: OrbitLoops
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617865264361557643, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: OrbitCenter
+      value: 
+      objectReference: {fileID: 9002345290843670048}
+    - target: {fileID: 4617865264361557643, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: CruiseDuration
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 5454889424514485391, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
       propertyPath: NetGUID.n1
       value: 187231162449106416
@@ -1691,6 +1936,18 @@ PrefabInstance:
     - target: {fileID: 4589962847919257757, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
       propertyPath: NetGUID.n1
       value: 5658517121828472650
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617865264361557643, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: OrbitLoops
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617865264361557643, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: OrbitCenter
+      value: 
+      objectReference: {fileID: 9002345290843670048}
+    - target: {fileID: 4617865264361557643, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
+      propertyPath: CruiseDuration
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5454889424514485391, guid: 0757e6742b697bd4e908262ce6fefd27, type: 3}
       propertyPath: NetGUID.n1

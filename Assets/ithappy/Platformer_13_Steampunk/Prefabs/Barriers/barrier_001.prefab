@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 4675431055207518415}
   - component: {fileID: 5968080769211619430}
   - component: {fileID: 7890308641244301723}
+  - component: {fileID: 1828414549252705963}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -216,6 +217,26 @@ MonoBehaviour:
       data:
         varName: EnableDebugLog
         Data: 0
+--- !u!114 &1828414549252705963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7209953412620568260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f7081f571924942a0a3f8cd1a0b149, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Radius: 100
+  Color: {r: 1, g: 0.8666667, b: 0.45882353, a: 1}
+  Intensity: 0
+  InitialIntensity: 30
+  Manager: {fileID: 0}
+  AutoRegister: 1
+  DisableUnityLight: 1
+  EnableDebugLog: 0
 --- !u!1001 &7813808353465747537
 PrefabInstance:
   m_ObjectHideFlags: 0

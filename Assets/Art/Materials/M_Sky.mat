@@ -107,13 +107,13 @@ Material:
     - _PulseEdgeIntensity: 1.5
     - _PulseEdgeWidth: 0.001
     - _PulseFill: 1
-    - _PulseProgress: 0
+    - _PulseProgress: 1
     - _PulseSoftness: 0.052
     - _PulseStrength: 1
     - _PulseWidth: 0.076
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _ReverseBlend: 0
+    - _ReverseBlend: 1
     - _Rotation: 0
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
